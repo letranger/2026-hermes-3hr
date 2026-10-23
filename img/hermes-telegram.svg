@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d67d00"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}.file{fill:#fff;stroke:#888;stroke-dasharray:4 3}
+    .tool{fill:#f4f4f4;stroke:#888;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .tline{stroke:#2a7;stroke-width:2;fill:none;marker-end:url(#arrw)}
+    .tline2{stroke:#2a7;stroke-width:2;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .oline{stroke:#d67d00;stroke-width:2;fill:none;marker-end:url(#arro)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="34" class="title">Hermes 接 Telegram：筆電主動去問 Telegram 有沒有新訊息</text>
+  <!-- phone -->
+  <rect x="30" y="120" width="150" height="130" class="box user"/>
+  <text x="105" y="148" text-anchor="middle" class="lbl">你的手機 / 電腦</text>
+  <text x="105" y="172" text-anchor="middle" class="cap">Telegram app</text>
+  <text x="105" y="196" text-anchor="middle" class="small">同一個帳號，手機、電腦</text>
+  <text x="105" y="212" text-anchor="middle" class="small">都看得到同一個對話</text>
+  <text x="105" y="236" text-anchor="middle" class="small">/sethome 只做一次</text>
+  <!-- telegram cloud -->
+  <rect x="270" y="100" width="260" height="170" class="box ext"/>
+  <text x="400" y="128" text-anchor="middle" class="lbl">Telegram 伺服器（雲端）</text>
+  <rect x="290" y="144" width="220" height="50" class="tool"/>
+  <text x="400" y="164" text-anchor="middle" class="cap" font-weight="700">你的 bot（@xxx_bot）</text>
+  <text x="400" y="182" text-anchor="middle" class="small">向 BotFather 建的，拿到一組 token</text>
+  <text x="400" y="222" text-anchor="middle" class="small">名稱＝顯示的名字，隨便取</text>
+  <text x="400" y="240" text-anchor="middle" class="small">username＝@代號，全球唯一，bot 結尾</text>
+  <line x1="188" y1="170" x2="262" y2="170" class="line2"/>
+  <text x="225" y="160" text-anchor="middle" class="small">對話</text>
+  <!-- laptop -->
+  <rect x="620" y="80" width="310" height="210" class="box agent"/>
+  <text x="775" y="108" text-anchor="middle" class="lbl">你的筆電</text>
+  <rect x="640" y="124" width="270" height="70" class="box" fill="#fff"/>
+  <text x="775" y="148" text-anchor="middle" class="cap" font-weight="700">Hermes</text>
+  <text x="775" y="166" text-anchor="middle" class="small">設定裡存著 bot 的 token</text>
+  <text x="775" y="184" text-anchor="middle" class="small">每隔幾秒去 Telegram 拉新訊息，再把回覆推回去</text>
+  <rect x="640" y="206" width="270" height="36" class="box model"/>
+  <text x="775" y="229" text-anchor="middle" class="cap">模型、工具、排程、記憶都和平常一樣</text>
+  <text x="775" y="272" text-anchor="middle" class="small">筆電要開著、不能睡著，手機才會有回應</text>
+  <path d="M530,160 C580,160 580,150 632,150" class="tline2"/>
+  <text x="580" y="140" text-anchor="middle" class="small" fill="#2a7">Hermes 主動連出去</text>
+  <!-- note -->
+  <rect x="24" y="316" width="912" height="64" class="note"/>
+  <text x="480" y="338" text-anchor="middle" class="cap">因為是 Hermes 主動連出去，筆電不需要對外的網址，掃個 QR 碼就能接。</text>
+  <text x="480" y="358" text-anchor="middle" class="cap">LINE 則是要 LINE 主動連進你的筆電，得自己架公開網址，所以課程不碰 LINE。</text>
+  <text x="480" y="374" text-anchor="middle" class="small">手機上的訊息其實是筆電在執行；人不在電腦旁也能交代工作、收到結果，這才是接 Telegram 的價值。</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d67d00"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}.file{fill:#fff;stroke:#888;stroke-dasharray:4 3}
+    .tool{fill:#f4f4f4;stroke:#888;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .tline{stroke:#2a7;stroke-width:2;fill:none;marker-end:url(#arrw)}
+    .tline2{stroke:#2a7;stroke-width:2;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .oline{stroke:#d67d00;stroke-width:2;fill:none;marker-end:url(#arro)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="34" class="title">模型是可以換的零件：Hermes 不動，換接哪個模型</text>
+  <rect x="40" y="150" width="110" height="56" class="box user"/><text x="95" y="184" text-anchor="middle" class="lbl">你</text>
+  <rect x="220" y="120" width="200" height="116" class="box agent"/>
+  <text x="320" y="156" text-anchor="middle" class="lbl">Hermes</text>
+  <text x="320" y="180" text-anchor="middle" class="cap">工具、記憶、排程、skill</text>
+  <text x="320" y="200" text-anchor="middle" class="cap">都在這裡，不會因為</text>
+  <text x="320" y="218" text-anchor="middle" class="cap">換模型而改變</text>
+  <line x1="158" y1="178" x2="212" y2="178" class="line2"/>
+  <!-- socket -->
+  <rect x="470" y="120" width="130" height="116" class="box model" stroke-dasharray="6 4"/>
+  <text x="535" y="160" text-anchor="middle" class="lbl">模型</text>
+  <text x="535" y="184" text-anchor="middle" class="cap">插槽</text>
+  <text x="535" y="206" text-anchor="middle" class="small">/model 就是在</text>
+  <text x="535" y="222" text-anchor="middle" class="small">選要插哪一個</text>
+  <line x1="428" y1="178" x2="462" y2="178" class="line2"/>
+  <!-- options -->
+  <text x="660" y="70" class="cap" font-weight="700">可以插的模型（提供方）</text>
+  <rect x="650" y="82" width="290" height="92" class="box" fill="#eef6ff" stroke="#2a6fd6" stroke-width="2"/>
+  <text x="662" y="100" class="lbl" fill="#2a6fd6" font-size="15">ChatGPT 帳號登入（今天用這個）</text>
+  <text x="662" y="116" class="small">走 Codex 額度，免費帳號一天約 50 則</text>
+  <g font-size="12">
+    <rect x="662" y="126" width="84" height="36" class="tool" fill="#dbe7fb"/><text x="704" y="141" text-anchor="middle">astra</text><text x="704" y="156" text-anchor="middle" font-size="10" fill="#666">旗艦</text>
+    <rect x="754" y="126" width="84" height="36" class="tool" fill="#e2f5e9" stroke="#2a7" stroke-width="2"/><text x="796" y="141" text-anchor="middle" font-weight="700">terra</text><text x="796" y="156" text-anchor="middle" font-size="10" fill="#666">中間檔，今天用</text>
+    <rect x="846" y="126" width="84" height="36" class="tool"/><text x="888" y="141" text-anchor="middle">luna</text><text x="888" y="156" text-anchor="middle" font-size="10" fill="#666">最省</text>
+  </g>
+  <rect x="650" y="186" width="290" height="40" class="box"/><text x="662" y="206" class="cap" font-weight="700">OpenAI API 金鑰</text><text x="662" y="221" class="small">按用量付費，或同意資料分享換免費額度</text>
+  <rect x="650" y="236" width="290" height="40" class="box"/><text x="662" y="256" class="cap" font-weight="700">Nous Portal</text><text x="662" y="271" class="small">Hermes 開發者的服務；對話內 /login 登的是它</text>
+  <rect x="650" y="286" width="290" height="40" class="box"/><text x="662" y="306" class="cap" font-weight="700">其他雲端：Claude、Gemini、OpenRouter…</text><text x="662" y="321" class="small">各自要金鑰</text>
+  <rect x="650" y="336" width="290" height="40" class="box"/><text x="662" y="356" class="cap" font-weight="700">自己電腦或區網的模型（Ollama、exo）</text><text x="662" y="371" class="small">不用錢、不上網，但要有夠強的機器</text>
+  <path d="M600,150 C630,150 630,128 650,128" class="tline"/>
+  <path d="M600,178 C630,178 630,206 650,206" class="line" stroke-dasharray="4 3"/>
+  <path d="M600,190 C630,190 630,256 650,256" class="line" stroke-dasharray="4 3"/>
+  <path d="M600,200 C630,200 630,306 650,306" class="line" stroke-dasharray="4 3"/>
+  <path d="M600,210 C630,210 630,356 650,356" class="line" stroke-dasharray="4 3"/>
+  <!-- Sol/Terra/Luna note -->
+  <rect x="24" y="300" width="560" height="140" class="note"/>
+  <text x="40" y="326" class="cap" font-weight="700">記三個就夠：旗艦、中間檔、最省（差在想多深、多快、吃多少額度）</text>
+  <text x="40" y="352" class="cap">astra　旗艦，資深工程師：跨多檔案、反覆驗證、題目模糊　　額度最貴，免費帳號沒有</text>
+  <text x="40" y="376" class="cap">terra　中間檔，一般工程師：整理、分析、寫文件，今天用它　　划算</text>
+  <text x="40" y="400" class="cap">luna　最省，助理：列檔案、分類、照清單做的簡單任務　　最便宜</text>
+  <text x="40" y="426" class="small">-900k 是同一模型把對話長度從 272K 放大到 900K，今天不用選。其他名字是同三個位置的不同世代。</text>
+</svg>

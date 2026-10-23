@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d67d00"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}.file{fill:#fff;stroke:#888;stroke-dasharray:4 3}
+    .tool{fill:#f4f4f4;stroke:#888;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .tline{stroke:#2a7;stroke-width:2;fill:none;marker-end:url(#arrw)}
+    .tline2{stroke:#2a7;stroke-width:2;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .oline{stroke:#d67d00;stroke-width:2;fill:none;marker-end:url(#arro)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="30" class="title">Hermes 怎麼讀信、寄信：中間隔著 himalaya 這個小程式</text>
+  <rect x="30" y="150" width="100" height="56" class="box user"/><text x="80" y="184" text-anchor="middle" class="lbl">你</text>
+  <rect x="180" y="50" width="170" height="48" class="box model"/>
+  <text x="265" y="70" text-anchor="middle" class="lbl">模型</text>
+  <text x="265" y="90" text-anchor="middle" class="small">決定下一步要下哪個指令</text>
+  <line x1="265" y1="106" x2="265" y2="112" class="line2"/>
+  <rect x="180" y="120" width="170" height="116" class="box agent"/>
+  <text x="265" y="150" text-anchor="middle" class="lbl">Hermes</text>
+  <text x="265" y="174" text-anchor="middle" class="cap">讀 himalaya skill</text>
+  <text x="265" y="192" text-anchor="middle" class="cap">知道要下什麼指令</text>
+  <text x="265" y="222" text-anchor="middle" class="small">模型決定，Hermes 下指令</text>
+  <line x1="138" y1="178" x2="172" y2="178" class="line2"/>
+  <rect x="400" y="130" width="160" height="96" class="box" fill="#f4f4f4"/>
+  <text x="480" y="160" text-anchor="middle" class="lbl">himalaya</text>
+  <text x="480" y="182" text-anchor="middle" class="cap">命令列程式</text>
+  <text x="480" y="200" text-anchor="middle" class="small">不是 skill，要另外裝</text>
+  <text x="480" y="216" text-anchor="middle" class="small">himalaya --version</text>
+  <line x1="358" y1="178" x2="392" y2="178" class="line2"/>
+  <!-- config -->
+  <rect x="380" y="256" width="200" height="70" class="box file"/>
+  <text x="480" y="278" text-anchor="middle" class="cap" font-weight="700">設定檔</text>
+  <text x="480" y="296" text-anchor="middle" class="small">~/.config/himalaya/config.toml</text>
+  <text x="480" y="314" text-anchor="middle" class="small">帳號、主機、應用程式密碼</text>
+  <line x1="480" y1="234" x2="480" y2="248" class="line"/>
+  <!-- gmail -->
+  <rect x="690" y="100" width="240" height="160" class="box ext"/>
+  <text x="810" y="128" text-anchor="middle" class="lbl">Gmail</text>
+  <rect x="704" y="142" width="212" height="44" class="tool"/>
+  <text x="810" y="160" text-anchor="middle" class="cap" font-weight="700">收信 IMAP</text><text x="810" y="178" text-anchor="middle" class="small">imap.gmail.com : 993</text>
+  <rect x="704" y="198" width="212" height="44" class="tool"/>
+  <text x="810" y="216" text-anchor="middle" class="cap" font-weight="700">寄信 SMTP</text><text x="810" y="234" text-anchor="middle" class="small">smtp.gmail.com : 587</text>
+  <path d="M560,160 C620,160 640,164 696,164" class="tline"/>
+  <path d="M560,196 C620,196 640,220 696,220" class="tline"/>
+  <text x="628" y="150" text-anchor="middle" class="small" fill="#2a7">搜尋、讀信</text>
+  <text x="628" y="232" text-anchor="middle" class="small" fill="#2a7">寄出</text>
+  <!-- app password -->
+  <rect x="690" y="290" width="240" height="60" class="box" fill="#fff"/>
+  <text x="810" y="312" text-anchor="middle" class="cap" font-weight="700">Google 帳號 → 應用程式密碼</text>
+  <text x="810" y="332" text-anchor="middle" class="small">研習後到這裡刪掉，Hermes 立刻讀不到</text>
+  <path d="M560,300 L682,310" class="oline" stroke-dasharray="4 3"/>
+  <text x="620" y="296" text-anchor="middle" class="small" fill="#d67d00">同一組密碼</text>
+  <!-- note -->
+  <rect x="24" y="372" width="912" height="44" class="note"/>
+  <text x="480" y="390" text-anchor="middle" class="cap">不用 Google Cloud：IMAP／SMTP 是老方法，只要應用程式密碼。密碼明碼存在設定檔，所以用專用信箱；</text>
+  <text x="480" y="408" text-anchor="middle" class="cap">Google 日曆沒有這條路，一定要 Google Cloud 的 OAuth，所以今天不碰日曆。</text>
+</svg>

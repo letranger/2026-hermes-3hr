@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d67d00"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}.file{fill:#fff;stroke:#888;stroke-dasharray:4 3}
+    .tool{fill:#f4f4f4;stroke:#888;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .tline{stroke:#2a7;stroke-width:2;fill:none;marker-end:url(#arrw)}
+    .tline2{stroke:#2a7;stroke-width:2;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .oline{stroke:#d67d00;stroke-width:2;fill:none;marker-end:url(#arro)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="34" class="title">每天早上八點：排程叫醒 Hermes → 讀信 → 整理 → 回報給你</text>
+  <!-- step 1 -->
+  <rect x="30" y="140" width="130" height="80" class="box" fill="#f4f4f4"/>
+  <text x="95" y="166" text-anchor="middle" class="lbl">① 排程</text>
+  <text x="95" y="188" text-anchor="middle" class="cap">08:00 時間到</text>
+  <text x="95" y="206" text-anchor="middle" class="small">筆電要開著</text>
+  <!-- step 2 hermes -->
+  <rect x="200" y="110" width="200" height="140" class="box agent"/>
+  <text x="300" y="138" text-anchor="middle" class="lbl">② Hermes</text>
+  <text x="300" y="160" text-anchor="middle" class="cap">照排程裡存的那句話做事</text>
+  <rect x="214" y="172" width="172" height="34" class="box model"/>
+  <text x="300" y="194" text-anchor="middle" class="cap">模型：挑重點、整理成表</text>
+  <text x="300" y="232" text-anchor="middle" class="small">信裡的內容是資料，不是指令</text>
+  <line x1="168" y1="180" x2="192" y2="180" class="line"/>
+  <!-- gmail read -->
+  <rect x="200" y="300" width="200" height="70" class="box ext"/>
+  <text x="300" y="326" text-anchor="middle" class="lbl">③ Gmail</text>
+  <text x="300" y="348" text-anchor="middle" class="cap">用 himalaya 讀最近一週的信</text>
+  <path d="M280,250 L280,292" class="tline"/>
+  <path d="M320,292 L320,250" class="tline"/>
+  <text x="340" y="276" class="small" fill="#2a7">信件內容</text>
+  <!-- outputs -->
+  <text x="470" y="100" class="cap" font-weight="700">④ 回報，三條路同時可用</text>
+  <rect x="460" y="112" width="220" height="58" class="box file"/>
+  <text x="570" y="136" text-anchor="middle" class="cap" font-weight="700">桌面「研習」資料夾</text>
+  <text x="570" y="156" text-anchor="middle" class="small">今日重要信件.md（今天做）</text>
+  <rect x="460" y="186" width="220" height="58" class="box ext"/>
+  <text x="570" y="210" text-anchor="middle" class="cap" font-weight="700">寄信給自己</text>
+  <text x="570" y="230" text-anchor="middle" class="small">同一個 himalaya 走 SMTP（今天做）</text>
+  <rect x="460" y="260" width="220" height="58" class="box ext" stroke-dasharray="6 4"/>
+  <text x="570" y="284" text-anchor="middle" class="cap" font-weight="700">Telegram 推到手機</text>
+  <text x="570" y="304" text-anchor="middle" class="small">接好 bot 後加一句就好（附錄，回家做）</text>
+  <path d="M400,150 C430,150 430,141 452,141" class="tline"/>
+  <path d="M400,180 C430,180 430,215 452,215" class="tline"/>
+  <path d="M400,210 C430,210 430,289 452,289" class="tline" stroke-dasharray="5 4"/>
+  <!-- you -->
+  <rect x="760" y="150" width="170" height="120" class="box user"/>
+  <text x="845" y="178" text-anchor="middle" class="lbl">⑤ 你</text>
+  <text x="845" y="202" text-anchor="middle" class="cap">早上看手機就知道</text>
+  <text x="845" y="222" text-anchor="middle" class="cap">今天有什麼要處理</text>
+  <text x="845" y="252" text-anchor="middle" class="small">要回信？它先寫草稿，你決定</text>
+  <path d="M680,215 L752,215" class="line"/>
+  <path d="M680,289 C720,289 720,240 752,236" class="line" stroke-dasharray="5 4"/>
+  <!-- note -->
+  <rect x="24" y="386" width="912" height="36" class="note"/>
+  <text x="480" y="409" text-anchor="middle" class="cap">這就是 agent 和聊天機器人的差別：沒有人問它，它時間到了自己去做，做完來找你。</text>
+</svg>

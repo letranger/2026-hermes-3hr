@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="arrw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7"/></marker>
+    <marker id="arro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d67d00"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.model{fill:#e6ecfb}.agent{fill:#e2f5e9}.ext{fill:#fbe9e7}.file{fill:#fff;stroke:#888;stroke-dasharray:4 3}
+    .tool{fill:#f4f4f4;stroke:#888;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .tline{stroke:#2a7;stroke-width:2;fill:none;marker-end:url(#arrw)}
+    .tline2{stroke:#2a7;stroke-width:2;fill:none;marker-start:url(#arrw);marker-end:url(#arrw)}
+    .oline{stroke:#d67d00;stroke-width:2;fill:none;marker-end:url(#arro)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <text x="24" y="34" class="title">Hermes 每次把什麼交給模型：SOUL.md、記憶、skill 的位置</text>
+  <rect x="40" y="200" width="110" height="56" class="box user"/><text x="95" y="234" text-anchor="middle" class="lbl">你</text>
+  <text x="95" y="276" text-anchor="middle" class="cap">「幫我出一份學習單」</text>
+  <!-- Hermes big box -->
+  <rect x="200" y="60" width="440" height="400" class="box agent"/>
+  <text x="420" y="82" text-anchor="middle" class="lbl">Hermes</text>
+  <!-- always-loaded group -->
+  <rect x="216" y="112" width="408" height="146" class="group"/>
+  <text x="228" y="108" class="cap" fill="#2a7" font-weight="700">每次對話開始，先讀進來、一起交給模型</text>
+  <rect x="228" y="122" width="188" height="56" class="box" fill="#fff"/>
+  <text x="322" y="144" text-anchor="middle" class="cap" font-weight="700">SOUL.md ── 它是誰</text>
+  <text x="322" y="164" text-anchor="middle" class="small">角色、口氣、做事原則</text>
+  <rect x="424" y="122" width="188" height="56" class="box" fill="#fff"/>
+  <text x="518" y="144" text-anchor="middle" class="cap" font-weight="700">記憶 ── 你是誰</text>
+  <text x="518" y="164" text-anchor="middle" class="small">你的科目、習慣、偏好</text>
+  <rect x="228" y="188" width="188" height="60" class="box" fill="#fff"/>
+  <text x="322" y="210" text-anchor="middle" class="cap" font-weight="700">工具清單</text>
+  <text x="322" y="230" text-anchor="middle" class="small">讀檔、終端機、信箱、排程…</text>
+  <rect x="424" y="188" width="188" height="60" class="box" fill="#fff"/>
+  <text x="518" y="210" text-anchor="middle" class="cap" font-weight="700">skill 目錄</text>
+  <text x="518" y="230" text-anchor="middle" class="small">每個 skill 只有一行簡介</text>
+  <!-- on-demand group -->
+  <rect x="216" y="284" width="408" height="96" class="group" stroke="#d67d00"/>
+  <text x="228" y="280" class="cap" fill="#d67d00" font-weight="700">用到時才讀進來</text>
+  <rect x="228" y="296" width="384" height="72" class="box" fill="#fff"/>
+  <text x="420" y="320" text-anchor="middle" class="cap" font-weight="700">skill 全文 ── 一件事的完整做法</text>
+  <text x="420" y="340" text-anchor="middle" class="small">模型看簡介覺得用得到，才請 Hermes 把整份讀進來</text>
+  <text x="420" y="358" text-anchor="middle" class="small">/learn 存的、它自己學的，都放這裡</text>
+  <!-- executor -->
+  <rect x="228" y="396" width="384" height="48" class="box" fill="#fff"/>
+  <text x="420" y="418" text-anchor="middle" class="cap" font-weight="700">執行工具、把結果交回模型</text>
+  <text x="420" y="436" text-anchor="middle" class="small">記憶和 skill 也是在這裡被寫入、更新</text>
+  <!-- model -->
+  <rect x="720" y="200" width="200" height="90" class="box model"/>
+  <text x="820" y="232" text-anchor="middle" class="lbl">模型</text>
+  <text x="820" y="256" text-anchor="middle" class="cap">收到：你的話＋上面那包</text>
+  <text x="820" y="276" text-anchor="middle" class="cap">回：答案，或「用某個工具」</text>
+  <line x1="158" y1="228" x2="192" y2="228" class="line"/>
+  <path d="M640,180 C690,180 690,228 712,228" class="line2"/>
+  <path d="M640,330 C690,330 690,290 712,270" class="oline"/>
+  <text x="690" y="318" class="small" fill="#d67d00">需要時</text>
+  <!-- note -->
+  <rect x="24" y="470" width="912" height="40" class="note"/>
+  <text x="480" y="495" text-anchor="middle" class="cap">記憶記的是「你是誰」，SOUL.md 寫的是「它是誰」，skill 記的是「一件事怎麼做」。前兩個每次都帶著，skill 用到才讀，所以可以存很多。</text>
+</svg>
