@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-10-23 五 16:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>龍蝦養殖實務研習手冊</title>
+<meta name="author" content="顏永進" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="css/muse.css" />
+<script src="css/copy_code.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">龍蝦養殖實務研習手冊
+<br />
+<span class="subtitle">臺南市國教輔導團科技領域分團 第九場研習「教學的 AI 助理」</span>
+</h1>
+<div id="outline-container-org2fdfa83" class="outline-2">
+<h2 id="org2fdfa83">基本資訊</h2>
+<div class="outline-text-2" id="text-org2fdfa83">
+<ul class="org-ul">
+<li>時間 : 2026-11-19（四）9:10–12:30，兩節各 90 分鐘，10:40–11:00 休息（9:00 報到、致詞，12:30 綜合座談由分團主持）</li>
+<li>地點 : 臺南市中山國中科技中心 電腦教室</li>
+<li>主辦 : 臺南市國教輔導團科技領域分團（第九場：教學的 AI 助理，以永續科技與資安攜手 PBL 專題為例）</li>
+<li>公告課程名稱 : 上半場「建構你的 AI 備課大腦」、下半場「高階 AI 賦能」。公告文字寫的是 GPTs／Gems／Claude 客製模型，實際內容是本手冊的 Hermes Agent，開場時說明一句。</li>
+<li>形式 : 實體，電腦教室</li>
+<li>主題 : 用 Hermes 養一隻「龍蝦」：讓 AI Agent 幫老師動手做事</li>
+<li>工具 : Hermes Agent 桌面版，接 ChatGPT 帳號</li>
+<li>參考 : 《Hermes Agent 上手講義》</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org62c773d" class="outline-2">
+<h2 id="org62c773d">課前準備</h2>
+<div class="outline-text-2" id="text-org62c773d">
+</div>
+<div id="outline-container-org1c11553" class="outline-3">
+<h3 id="org1c11553">學員要在 11/16（一）以前做好的事</h3>
+<div class="outline-text-3" id="text-org1c11553">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 看安裝影片（<a href="https://youtu.be/hZUf81GGjiA">設定 ChatGPT</a>、<a href="https://youtu.be/junAjFtTQAI">Windows</a>、<a href="https://youtu.be/czTL30xN5l4">Mac</a>），照<a href="https://letranger.github.io/2026-hermes-1hr/">課前安裝說明</a>裝好 Hermes 並登入 ChatGPT</li>
+<li class="off"><code>[&#xa0;]</code> 下載 <a href="https://letranger.github.io/2026-hermes-1hr/%E7%A0%94%E7%BF%92.zip">研習.zip</a> 解壓到桌面，得到「研習」資料夾和四個素材檔（或手動建資料夾逐一下載）</li>
+<li class="off"><code>[&#xa0;]</code> 準備一個 Gmail 帳號（個人或學校都可以），到 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> 產生一組應用程式密碼，把密碼用筆記本存起來，研習時備用。</li>
+<li class="off"><code>[&#xa0;]</code> 手機裝好 Telegram 並登入，電腦上能開 Telegram 網頁版 <a href="https://web.telegram.org">https://web.telegram.org</a> （第 7 單元要用）</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7a7a68b" class="outline-2">
+<h2 id="org7a7a68b">單元內容</h2>
+<div class="outline-text-2" id="text-org7a7a68b">
+</div>
+<div id="outline-container-orge035c5f" class="outline-3">
+<h3 id="orge035c5f">1. AI Agent 是什麼、為什麼是 Hermes</h3>
+<div class="outline-text-3" id="text-orge035c5f">
+
+<div id="orgbc68fe1" class="figure">
+<p><img src="img/agent-vs-chat.svg" alt="agent-vs-chat.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>直接用 ChatGPT 和用 Hermes 的差別</p>
+</div>
+<ul class="org-ul">
+<li>ChatGPT vs. AI Agent
+<ol class="org-ol">
+<li>直接用 ChatGPT：你和模型中間沒有東西。模型只會「讀進文字、寫出文字」，看不到你的電腦，檔案要自己貼、結果自己搬。</li>
+<li>用 Hermes：中間多了一個 agent。Hermes 把工具清單附給模型，模型只決定「下一步用哪個工具」，真正讀檔、執行、寄信的是 Hermes。模型是同一個，差在中間有沒有 agent。</li>
+</ol></li>
+<li><p>
+Why Hermes
+</p>
+
+<p>
+龍蝦（OpenClaw）和 Hermes 是同一類工具，兩邊也都有搬家指令可以互相搬設定。
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">　</th>
+<th scope="col" class="org-left">Hermes</th>
+<th scope="col" class="org-left">龍蝦（OpenClaw）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">是什麼</td>
+<td class="org-left">開源 AI Agent，裝在自己電腦上，MIT 授權</td>
+<td class="org-left">同上，MIT 授權，2025 年底推出，社群最大</td>
+</tr>
+
+<tr>
+<td class="org-left">安裝</td>
+<td class="org-left">桌面版一個安裝檔，Mac／Windows 都有</td>
+<td class="org-left">桌面版 Mac／Windows 都有，也可用安裝腳本；底層是 Node.js</td>
+</tr>
+
+<tr>
+<td class="org-left">接模型</td>
+<td class="org-left">ChatGPT 帳號登入，或各家 API 金鑰、本機模型</td>
+<td class="org-left">一樣：ChatGPT 帳號登入、API 金鑰、本機模型</td>
+</tr>
+
+<tr>
+<td class="org-left">訊息平台</td>
+<td class="org-left">Telegram、Discord、Slack、WhatsApp、Signal、Email…</td>
+<td class="org-left">更多，20 種以上，含 LINE、iMessage</td>
+</tr>
+
+<tr>
+<td class="org-left">Skill</td>
+<td class="org-left">SKILL.md 格式，內建一批，背景自學是核心功能</td>
+<td class="org-left">同一種 SKILL.md 格式，也會自己學，另有 ClawHub 市集</td>
+</tr>
+
+<tr>
+<td class="org-left">記憶</td>
+<td class="org-left">存在本機資料庫，可全文搜尋</td>
+<td class="org-left">存成本機檔案</td>
+</tr>
+
+<tr>
+<td class="org-left">排程</td>
+<td class="org-left">用白話設，內建</td>
+<td class="org-left">一樣</td>
+</tr>
+
+<tr>
+<td class="org-left">搬家</td>
+<td class="org-left"><code>hermes claw migrate</code> 把龍蝦的設定搬過來</td>
+<td class="org-left"><code>openclaw migrate hermes</code> 反向搬</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>今天用 Hermes，因為桌面版裝起來最省事、ChatGPT 帳號登入一次就能用</li>
+<li>兩邊功能大同小異，會一個就會另一個。想接 LINE、想裝別人做好的 skill，龍蝦的選擇多一些；想要它自己越用越會，Hermes 走得比較前面。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf166d3c" class="outline-3">
+<h3 id="orgf166d3c">2. 模型與工具</h3>
+<div class="outline-text-3" id="text-orgf166d3c">
+</div>
+<div id="outline-container-org019440d" class="outline-4">
+<h4 id="org019440d">[實作]</h4>
+<div class="outline-text-4" id="text-org019440d">
+<ul class="org-ul">
+<li>輸入 <code>/model</code>，確認接的是 ChatGPT；看一眼清單裡有哪幾個模型，不用選，關掉。</li>
+<li>輸入 <code>/tools</code>，看一眼它能用的工具，關掉。</li>
+<li>輸入 <code>/new</code>，開一個新對話。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf081c17" class="outline-4">
+<h4 id="orgf081c17">[解說]剛才看到的是什麼</h4>
+<div class="outline-text-4" id="text-orgf081c17">
+
+<div id="org775e08f" class="figure">
+<p><img src="img/models-in-agent.svg" alt="models-in-agent.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Hermes vs. 模型</p>
+</div>
+<ul class="org-ul">
+<li><code>/model</code> 看到的清單：模型是 Hermes 的一個可換零件，工具、記憶、排程都在 Hermes 這邊，換模型不影響。
+<ul class="org-ul">
+<li>用 ChatGPT 帳號登入時，用的是 Codex 的額度，不是網頁聊天的額度。一則是你對它說的一句話，中間它讀檔、寫程式、跑指令都算同一則，今天夠用。</li>
+<li><p>
+清單很長，記三個就夠，分別是旗艦、中間檔、最省：
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">模型</th>
+<th scope="col" class="org-left">定位</th>
+<th scope="col" class="org-left">適合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">gpt-6-astra</td>
+<td class="org-left">旗艦，最會想</td>
+<td class="org-left">跨多個檔案、要反覆驗證修正、題目模糊</td>
+</tr>
+
+<tr>
+<td class="org-left">gpt-5.6-terra</td>
+<td class="org-left">中間檔，今天用它</td>
+<td class="org-left">整理、分析、寫文件</td>
+</tr>
+
+<tr>
+<td class="org-left">gpt-5.6-luna</td>
+<td class="org-left">最快最省</td>
+<td class="org-left">列檔案、分類、照清單做的簡單任務</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>一句話記法：旗艦是資深工程師、中間檔是一般工程師、最省是助理。額度大約差 2 到 10 倍，今天的任務用中間檔最划算。</li>
+<li>清單裡其他名字（gpt-6-sol、gpt-6-luna、gpt-5.6-sol…）是同樣三個位置在不同世代的版本，看得到就當同一檔次用。</li>
+<li>帶 <code>-900k</code> 的是同一個模型放大「一次對話能裝多少」：預設 272K token，大約十幾萬字，今天的任務用不到一成；900k 放大到三倍多，但額度也燒得更快，今天不要選。</li>
+<li>免費帳號看得到的模型比付費少，以自己畫面為準；看不到 terra 就選清單裡有的中間檔。</li>
+</ul></li>
+</ul></li>
+<li><code>/tools</code> 看到的清單：就是第 1 單元圖裡的「工具箱」，每次對話 Hermes 都把這份清單附給模型。</li>
+<li><code>/new</code>：換一件事情就開新對話，舊對話的內容不會跟過來，記憶會（第 4 單元）。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org664be54" class="outline-3">
+<h3 id="org664be54">3. 動手做事</h3>
+<div class="outline-text-3" id="text-org664be54">
+</div>
+<div id="outline-container-orgaac422d" class="outline-4">
+<h4 id="orgaac422d">[實作]</h4>
+<div class="outline-text-4" id="text-orgaac422d">
+<ol class="org-ol">
+<li><p>
+建立檔案（5 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請在桌面上的「研習」資料夾裡建立一個名為 測試.txt 的檔案，內容寫：這是 Hermes 幫我建立的第一個檔案。
+</code></code></pre>
+</div>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請列出桌面上「研習」資料夾裡的所有檔案。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>打開桌面的資料夾，看到檔案真的在。</li>
+</ul></li>
+<li><p>
+分析段考成績（8 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>桌面上「研習」資料夾裡的 段考成績.csv 是這次段考的成績，請幫我分析各班的平均、及格率，並告訴我有哪些值得注意的地方。
+</code></code></pre>
+</div></li>
+<li><p>
+生成圖表和 Excel 檔（12 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>依據csv檔建立3個圖表：各班平均成績長條圖、各班及格率折線圖、全校成績分布直方圖。存到桌面「研習」資料夾裡，檔名分別是 平均成績.png、及格率.png、分布直方圖.png
+再轉成一個excel檔，以班為單位列出學期平均、名次
+</code></code></pre>
+</div></li>
+<li><p>
+上網查資料（8 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請上網查「循環經濟」在國中課程裡常見的教學案例，挑三個適合當 PBL 專題題目的，每個用兩三句話說明，存到桌面上「研習」資料夾的 PBL題目.md。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>看它搜尋了幾次、讀了哪些網頁。</li>
+<li>全班同時搜尋，有人碰到額度上限就看鄰座的畫面。</li>
+</ul></li>
+<li><p>
+核准畫面（7 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請把桌面上「研習」資料夾裡的 測試.txt 刪掉。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>會跳出核准畫面，先不要按，看清楚選項再按「只執行這一次」。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org865fba6" class="outline-4">
+<h4 id="org865fba6">[解說]剛才它做了什麼</h4>
+<div class="outline-text-4" id="text-org865fba6">
+<ul class="org-ul">
+<li>建檔那兩句：模型看了你的話，決定用「寫檔」和「列目錄」兩個工具，Hermes 去執行，結果回給模型，模型再回你。這就是第 1 單元圖的 ②。</li>
+<li>段考分析：它先讀檔、發現資料有幾十筆、自己寫一段程式算、再整理成文字。一輪一輪直到做完，就是 agent loop。</li>
+<li>提醒：資料裡沒寫的東西它會自己推測（例如選擇題每題幾分），這些地方要自己看過。</li>
+<li>Hermes 會依據你要它做的事情，決定要用哪些工具。工具清單裡的每一個工具，它都能用，但不會自己亂用。它不會自己去網路搜尋、寄信、改檔案，除非你叫它做。</li>
+<li>上網查資料：搜尋也是一個 tool，模型決定關鍵字、Hermes 去查、結果回給模型再整理。和讀檔一樣，差別只是資料來源在網路上。查回來的內容是資料，不是給它的指令。</li>
+<li>有些事情可能涉及電腦安全，例如刪檔、寄信、跑程式，Hermes 會先問你要不要做，這就是第 1 單元圖的「核准」。剛才刪檔跳出來的選項：
+<ul class="org-ul">
+<li>只執行這一次：做這一件，下次同類的事再問。今天一律選這個。</li>
+<li>這個對話都允許：同一個對話裡同類的事不再問，=/new= 之後重新問。</li>
+<li>永遠允許：以後都不問。不要選，尤其是寄信、刪檔。</li>
+<li>拒絕：不做，它會換個做法或問你。</li>
+<li>選項字樣以示範機實際畫面為準（見待確認）。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5b0b47e" class="outline-3">
+<h3 id="org5b0b47e">4. 靈魂與記憶</h3>
+<div class="outline-text-3" id="text-org5b0b47e">
+</div>
+<div id="outline-container-orge19eb2c" class="outline-4">
+<h4 id="orge19eb2c">[實作]</h4>
+<div class="outline-text-4" id="text-orge19eb2c">
+<ol class="org-ol">
+<li><p>
+請它記住你（5 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請記住以下關於我的資訊：我在高中教數學，今年教高一。我做講義的習慣是先列學習目標，再放例題，最後放練習題，每一題都要附答案。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>請大家換成自己的科目和習慣。</li>
+<li>輸入 <code>/new</code>，問「我教什麼科目、哪個年級？我做講義有什麼習慣？」確認記住了。</li>
+</ul></li>
+<li><p>
+換 SOUL.md（4 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請把你的 SOUL.md 整份換成桌面上「研習」資料夾裡 SOUL範本.md 的內容。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>輸入 <code>/new</code>，問「期中考快到了，學生問我要怎麼準備，我可以給他們什麼建議？」，看口氣和格式。</li>
+<li>有時間的人：用文字編輯器打開 SOUL.md（位置見解說），改一句口氣， <code>/new</code> 再問一次。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga0b89ae" class="outline-4">
+<h4 id="orga0b89ae">[解說]剛才改的是 Hermes 的哪個部分</h4>
+<div class="outline-text-4" id="text-orga0b89ae">
+
+<div id="org64726f8" class="figure">
+<p><img src="img/hermes-structure.svg" alt="hermes-structure.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Hermes架構</p>
+</div>
+<ul class="org-ul">
+<li>看圖：Hermes 每次把你的話連同圖上那一包交給模型。剛才動的是前兩樣。
+<ul class="org-ul">
+<li>記憶記的是「你是誰」：開新對話還記得你教什麼，就是因為它每次都帶著。</li>
+<li>SOUL.md 寫的是「它是誰」：角色、口氣、做事原則。換掉之後同一個問題口氣不同。前後對照的版本留給回家作業。</li>
+<li><p>
+SOUL.md 是一個真的檔案，放在 Hermes 的家目錄：
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">系統</th>
+<th scope="col" class="org-left">位置</th>
+<th scope="col" class="org-left">怎麼打開</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Mac</td>
+<td class="org-left"><code>~/.hermes/SOUL.md</code></td>
+<td class="org-left">Finder 按 ⌘⇧G，貼 <code>~/.hermes</code>，用文字編輯打開</td>
+</tr>
+
+<tr>
+<td class="org-left">Windows</td>
+<td class="org-left"><code>C:\Users\你的帳號\AppData\Local\hermes\SOUL.md</code></td>
+<td class="org-left">檔案總管網址列貼 <code>%LOCALAPPDATA%\hermes</code>，用記事本打開</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Mac 的資料夾名稱開頭是點，預設隱藏，所以用「前往資料夾」最快。Windows 的 AppData 也是隱藏資料夾，所以直接貼路徑。</li>
+<li>兩邊名稱不一樣：Mac 是家目錄下的 <code>.hermes</code>，Windows 是 AppData\Local 下的 <code>hermes</code> （沒有點）。Windows 沒有 <code>C:\Users\你的帳號\.hermes</code> 這個資料夾。</li>
+<li>兩種改法，效果一樣：剛才那樣請 Hermes 改，或自己用文字編輯器打開改。</li>
+<li>改完要 <code>/new</code> 開新對話才生效，因為它是在每次對話開始時讀進去的。檔案留空或刪掉，Hermes 會退回內建的預設個性。</li>
+<li>記憶不是這樣改的：記憶由 Hermes 自己管理，要改就直接對它說「請忘掉…」或「請改成…」。</li>
+</ul></li>
+</ul></li>
+<li><p>
+後兩樣是 tool 和 skill，等一下第 5 單元會一直用到，先講清楚差別。Tool 是「能做的動作」，skill 是「怎麼做一件事的說明書」。
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">　</th>
+<th scope="col" class="org-left">Tool（工具）</th>
+<th scope="col" class="org-left">Skill（技能）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">本質</td>
+<td class="org-left">程式功能，Hermes 真的去執行：讀檔、寫檔、跑終端機、搜尋、排程</td>
+<td class="org-left">一份給模型看的文字，寫著步驟、注意事項、要下什麼指令</td>
+</tr>
+
+<tr>
+<td class="org-left">誰用</td>
+<td class="org-left">模型發出 tool call，Hermes 執行</td>
+<td class="org-left">模型讀了之後，照裡面寫的去呼叫 tool</td>
+</tr>
+
+<tr>
+<td class="org-left">數量</td>
+<td class="org-left">固定一組， <code>/tools</code> 看得到</td>
+<td class="org-left">可以一直增加： <code>/learn</code> 存、它自己學、別人分享</td>
+</tr>
+
+<tr>
+<td class="org-left">什麼時候進模型</td>
+<td class="org-left">清單每次都附給模型</td>
+<td class="org-left">目錄每次只附一行簡介，全文用到才讀</td>
+</tr>
+
+<tr>
+<td class="org-left">能不能自己做</td>
+<td class="org-left">要寫程式或接 MCP</td>
+<td class="org-left">用白話寫就行，做完一件事說「存成 skill」</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>一句話：沒有 tool，skill 只是空談；沒有 skill，模型每次都要自己摸索怎麼用工具。具體例子下一單元做完再對。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8c19408" class="outline-3">
+<h3 id="org8c19408">5. 接 Gmail、讀信、寄信、設排程</h3>
+<div class="outline-text-3" id="text-org8c19408">
+</div>
+<div id="outline-container-orga1eef96" class="outline-4">
+<h4 id="orga1eef96">[實作]</h4>
+<div class="outline-text-4" id="text-orga1eef96">
+<ol class="org-ol">
+<li><p>
+裝 himalaya、接上信箱（15 分鐘，每個人做；排在上半場最後，沒接上的人休息時間處理）
+</p>
+<ul class="org-ul">
+<li>找到課前準備好的 16 字母應用程式密碼。</li>
+<li>如未完成，應用程式密碼在 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> 產生。</li>
+</ul>
+<p>
+輸入提示詞：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>幫我裝 himalaya，並接上我的 Gmail : XYZ@gmail.com
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>它會先裝 himalaya（Mac 下載執行檔，Windows 先裝 Scoop 再裝）</li>
+<li>中間如果跳出核准畫面，就按「只執行這一次」。</li>
+<li>它會開一個小視窗讓你填應用程式密碼（16 個字母，不含空格），填完等它跑完。</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請列出我最近 5 封信的主旨和寄件人。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>看到自己的信就算成功。</li>
+</ul></li>
+<li><p>
+讀信、整理（10 分鐘，每個人做；下半場從這裡開始）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請讀我最近一週的信，列出有日期、有截止、或需要我出席、回覆的事，整理成一張表（事項、日期、來源信件、要做什麼），存到桌面上「研習」資料夾的 今日重要信件.md。
+</code></code></pre>
+</div></li>
+<li><p>
+寄信（8 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>把 今日重要信件.md 的內容寄到我自己的信箱，標題寫「今日重要信件」。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>可能會跳核准畫面，按「只執行這一次」（選項第 3 單元講過）。</li>
+<li>以手機或網頁 Gmail 收到信就算成功。</li>
+</ul></li>
+<li><p>
+設排程（7 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請設一個排程：每天早上八點做一次剛才的事，讀最近一週的信、整理成 今日重要信件.md，並寄到我的信箱。
+</code></code></pre>
+</div>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請列出我目前所有的排程。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>想當場看到它跑，再加一句：「另外設一個 3 分鐘後執行一次的，跑完就刪掉。」</li>
+</ul></li>
+<li>自動回信模擬（15 分鐘，兩人一組，每個人做）
+找一位同伴，互相寄一封「擔任研習講師」的邀請信給對方，再讓 Hermes 幫你回。
+<ul class="org-ul">
+<li><p>
+先寄：用手機或網頁 Gmail 寄給同伴，主旨和內容照下面抄，把名字和日期改一改。
+</p>
+<pre class="example" id="org348fdf0">
+主旨：邀請擔任 12/19 AI 探索者南區社群共學講師
+
+○○老師您好：
+
+AI 探索者南區社群第 6 次共學預計 12 月 19 日（六）上午 10 點在台南一中舉行，
+主題是「讓 Hermes 幫你管信箱」。想邀請您擔任當天的講師，分享約 40 分鐘。
+請問您是否方便？若可以，也請告訴我您希望的講題名稱，我們好製作海報。
+麻煩在 11 月 5 日前回覆，謝謝。
+
+○○○ 敬上
+</pre></li>
+<li>等同伴寄出後，先到Gmail確認有收到信</li>
+<li><p>
+回到 Hermes：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>看看我最近有沒有需要回覆的信。有的話告訴我是誰、問什麼，先問我的意見，再幫我草擬回信。我確認後你才寄出。
+</code></code></pre>
+</div></li>
+<li><p>
+它會找出邀請信，問你要不要接、有沒有想講的題目。你用一句話回答，例如：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>接，題目就叫「Hermes 幫我看信箱」。
+</code></code></pre>
+</div></li>
+<li>它會把草稿貼出來給你看。看完說「可以，寄出」，或告訴它要改哪裡。</li>
+<li>寄出時會跳核准畫面，按「只執行這一次」。</li>
+<li>同伴的信箱收到回信就算完成。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org93a17d0" class="outline-4">
+<h4 id="org93a17d0">[解說]剛才五步各是什麼</h4>
+<div class="outline-text-4" id="text-org93a17d0">
+<p>
+Hermes 內建一個 himalaya skill，那是一份 SKILL.md，教它怎麼裝 himalaya、設定檔長什麼樣、Gmail 的資料夾別名怎麼寫。
+</p>
+
+<p>
+真正動手的是 terminal 這個 tool：執行安裝指令、寫 config.toml、跑 himalaya envelope list 去連 Gmail。沒有 skill，Hermes 不知道 himalaya 要怎麼設；沒有 tool，它知道也做不了。
+</p>
+
+<div id="org68f877a" class="figure">
+<p><img src="img/hermes-gmail.svg" alt="hermes-gmail.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Hermes 收發信流程</p>
+</div>
+<ul class="org-ul">
+<li>看圖：Hermes 本身不會收信。中間隔著 himalaya 這個小程式，它用 IMAP 收、SMTP 寄，只要應用程式密碼，所以不用 Google Cloud。Google 日曆沒有這條路，今天不碰。</li>
+<li><p>
+五步裡誰是 skill、誰是 tool（接第 4 單元的表格）：
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">步驟</th>
+<th scope="col" class="org-left">用到的 skill（說明書）</th>
+<th scope="col" class="org-left">用到的 tool（動作）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1 接上信箱</td>
+<td class="org-left">himalaya：設定檔長什麼樣、Gmail 的主機和資料夾對應怎麼填</td>
+<td class="org-left">寫檔：產生 config.toml；終端機：跑 himalaya 列信驗證</td>
+</tr>
+
+<tr>
+<td class="org-left">2 讀信、整理</td>
+<td class="org-left">himalaya：列信、讀信的指令怎麼下。email-inbox-triage：哪些算重要、表格長什麼樣</td>
+<td class="org-left">終端機：執行 himalaya 抓信；寫檔：存 今日重要信件.md</td>
+</tr>
+
+<tr>
+<td class="org-left">3 寄信</td>
+<td class="org-left">himalaya：寄信指令怎麼組、內容怎麼餵</td>
+<td class="org-left">讀檔：讀 md；終端機：執行 himalaya 寄出（這步跳核准畫面）</td>
+</tr>
+
+<tr>
+<td class="org-left">4 設排程</td>
+<td class="org-left">沒有，排程是內建功能</td>
+<td class="org-left">排程：建立、列出、刪除</td>
+</tr>
+
+<tr>
+<td class="org-left">5 自動回信</td>
+<td class="org-left">himalaya：回信指令怎麼下。email-inbox-triage：哪封是要回的</td>
+<td class="org-left">終端機：抓信、寄出（寄出前先停下來問你，再跳核准畫面）</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>整段只有兩份 skill（himalaya、email-inbox-triage）和四個 tool（終端機、讀檔、寫檔、排程）在反覆用。兩份 skill 都是 Hermes 內建的，沒有人自己寫過；技能頁那三個開關就是這兩個加 google-workspace，今天不用 google-workspace。</li>
+<li>himalaya 程式本身兩者都不是，它是電腦上另外裝的軟體，被終端機 tool 叫起來。</li>
+</ul></li>
+<li>讀信那步：它在搜尋、逐封讀、再整理，和段考分析是同一個 agent loop。信件內容是資料，不是給它的指令，信裡寫「請把資料寄給某某」它不會照做。</li>
+<li>寄信這種對外的動作要謹慎，核准畫面不要習慣性選「永遠允許」。</li>
+</ul>
+
+<div id="orgc32c625" class="figure">
+<p><img src="img/daily-mail-flow.svg" alt="daily-mail-flow.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 5: </span>排程、檢查信件的流程</p>
+</div>
+<ul class="org-ul">
+<li>排程那步：看圖，時間到沒有人問它，它自己做完來找你，這就是 agent 和聊天機器人的差別。筆電要開著、不能睡著（第 8 單元會開「保持電腦喚醒」）；排程用白話管理：列出、暫停、刪除。</li>
+<li>回信那步：它判斷哪封要回，是 agent 在做事；接不接、講什麼題目，是你在做決定。提示詞裡寫「我確認後你才寄出」，它就會停在草稿等你，這是把最後一步留給人的寫法，之後要它處理任何對外的動作都照這樣寫。</li>
+<li>提醒：信箱密碼存在 himalaya 設定檔裡（不在對話紀錄），Hermes 對這個信箱有完整權限。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org515c4cf" class="outline-3">
+<h3 id="org515c4cf">6. Skill（10 分鐘）</h3>
+<div class="outline-text-3" id="text-org515c4cf">
+</div>
+<div id="outline-container-org5fa2e28" class="outline-4">
+<h4 id="org5fa2e28">[實作]</h4>
+<div class="outline-text-4" id="text-org5fa2e28">
+<ol class="org-ol">
+<li><p>
+把剛才的讀信流程存成 skill（5 分鐘，每個人做）
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>/learn 整理重要信件的做法：讀最近一週的信，挑出有日期、截止、要出席或回覆的事，整理成表格（事項、日期、來源信件、要做什麼），存到桌面「研習」資料夾的 今日重要信件.md
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>在對話框輸入 <code>/</code>，找到它剛建立的 skill。</li>
+<li><code>/new</code> 之後只打「整理重要信件」，看它是不是照 skill 做。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgdfa088c" class="outline-4">
+<h4 id="orgdfa088c">[解說]剛才存的是什麼</h4>
+<div class="outline-text-4" id="text-orgdfa088c">
+<ul class="org-ul">
+<li>存的是第三份 skill：「先用 himalaya 列信，再照 triage 的標準挑，存成某個格式」，也就是把第 5 單元第 2 步的做法固定成說明書。之後一句「整理重要信件」就好。</li>
+<li>對照第 4 單元的表格：skill 可以一直增加，平常只帶一行簡介，用到才讀全文，所以存很多也不會拖慢它。</li>
+<li>它會自己學：它會在背景回顧做過的事，自己寫 skill、整理記憶；=/journey= 可以看學習地圖。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb680f90" class="outline-3">
+<h3 id="orgb680f90">7. 接上 Telegram（25 分鐘，每個人做）</h3>
+<div class="outline-text-3" id="text-orgb680f90">
+<p>
+讓排程結果和提醒直接推到手機。筆電和 Hermes 都要開著。
+</p>
+
+<div id="org400cfe4" class="figure">
+<p><img src="img/hermes-telegram.svg" alt="hermes-telegram.svg" class="org-svg" width="100%" style="max-width:960px" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Hermes 主動連去 Telegram 拉訊息，筆電不用對外網址；bot 掛在你的帳號上，手機、電腦都看得到</p>
+</div>
+</div>
+<div id="outline-container-orgc998117" class="outline-4">
+<h4 id="orgc998117">[實作]連結 Hermes 與 Telegram</h4>
+<div class="outline-text-4" id="text-orgc998117">
+<p>
+以下步驟會輪流在Hermes和Telegram間切換，建議在電腦上同時開啟Hermes和Telegram網頁版，手機上開Telegram app。兩邊都要登入同一個帳號。
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgf0b5b7a"></a>1. 請Hermes幫忙安裝啟動 gateway<br />
+<div class="outline-text-5" id="text-orgf0b5b7a">
+<p>
+這裡的gateway是 Hermes 的背景程式，負責收發 Telegram 訊息。第一次用電腦上還沒有，請先安裝啟動。
+</p>
+<ul class="org-ul">
+<li><p>
+最簡單的安裝方式是直接對 Hermes 說：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>幫我安裝並啟動 gateway。
+</code></code></pre>
+</div></li>
+<li>如果你偏好自己動手：Windows 開 PowerShell、Mac 開終端機，打 <code>hermes gateway install</code>，再打 <code>hermes gateway status</code>，看到 running 和一個 PID 就好。</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdc2cbcb"></a>2. 到Telegram建立一個bot<br />
+<div class="outline-text-5" id="text-orgdc2cbcb">
+<p>
+我們的目的是要「藉由和Telegram bot對話，讓 Hermes 收到訊息」。所以要先在 Telegram上建一個 bot。
+</p>
+<ol class="org-ol">
+<li><p>
+在Telegram的搜尋欄輸入 <code>BotFather</code>，按 OPEN。這個bot是 Telegram 官方提供的，專門用來建立其他 bot。大概長這個樣子
+</p>
+
+<div id="org6c37495" class="figure">
+<p><img src="附錄：接上_Telegram（自行練習，不在課堂上做）/2026-10-22_11-33-07.png" alt="2026-10-22_11-33-07.png" width="400" />
+</p>
+</div></li>
+<li>在BotFather這個對話裡，按 <code>Create a new bot</code>，它會問你 bot 的名稱(Bot Name)和使用者名稱(username<sub>bot</sub>)：
+<ul class="org-ul">
+<li>Bot Name: Bot名稱可以中文、空格，使用者名稱要英文、數字、底線，結尾一定是 bot。</li>
+<li>username<sub>bot</sub>: 這個名稱是 Telegram 搜尋用的代號，顯示成 @xxx<sub>bot</sub>，要全 Telegram 唯一，被用掉就得換一個。隨便取一個英文名或學校縮寫加數字，例如 <code>tnfsh_wang_hermes_bot</code>，比較不會撞到。這組username<sub>bot等一下在步驟4</sub>)也會用到，不要設得太複雜。</li>
+</ul></li>
+<li>按 <code>Create Bot~，然後它顯示這個Bot的一組 token（一長串英數字），按 ~Copy</code> 複製起來，這個 token 是 Hermes 連到 Telegram 的鑰匙。</li>
+</ol>
+</div>
+</li>
+<li><a id="org3e4c0f6"></a>3. 把 token 填進 Hermes<br />
+<div class="outline-text-5" id="text-org3e4c0f6">
+<ol class="org-ol">
+<li>回到 Hermes，桌面版：設定 → 訊息平台 → Telegram</li>
+<li>找到 Bot Token，把剛才複製的token貼上</li>
+<li>按底下的 <code>儲存變更</code>，Hermes 會自動重新連線到 Telegram。</li>
+<li>按上面的 ~重新啟動~。</li>
+</ol>
+</div>
+</li>
+<li><a id="org4fa4c8c"></a>4. 在 Telegram 上啟動Bot<br />
+<div class="outline-text-5" id="text-org4fa4c8c">
+<ol class="org-ol">
+<li>在Telegram的搜尋欄輸入 剛才設定的 ~username<sub>bot</sub>~，點兩下開啟對話框。</li>
+<li><p>
+按對話框裡的 <code>Start</code> 按鈕，Hermes 會回覆一組配對碼（pairing code），像這樣：
+</p>
+<pre class="example" id="orga65b0f2">
+Hi! I don't recognize you yet, so I can't reply until the person running this bot approves you.
+
+Your pairing code: JHURE3GU (valid for 1 hour)
+
+If you run this bot, open a terminal and run: hermes pairing approve telegram JHURE3GU. Otherwise send that command to the bot owner. After approval, send your message again.
+</pre></li>
+</ol>
+</div>
+</li>
+<li><a id="orgc4f83be"></a>5. 讓Hermes認識你<br />
+<div class="outline-text-5" id="text-orgc4f83be">
+<p>
+接下來有兩種做法：
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org55eb374"></a>做法一：在Hermes桌面版操作<br />
+<div class="outline-text-6" id="text-org55eb374">
+<ol class="org-ol">
+<li>回到 Hermes，桌面版：設定 → 訊息平台 → Telegram</li>
+<li>找到上面的 <code>PENDING REQUESTS (1)~，按 ~Approve</code>，Hermes就會把你加進允許名單。你就可以在 Telegram 上和 Hermes 對話了。</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdc11cec"></a>做法二：在終端機上操作<br />
+<div class="outline-text-6" id="text-orgdc11cec">
+<ol class="org-ol">
+<li>開 PowerShell 或終端機，打 <code>hermes pairing approve telegram 你的配對碼</code>，把剛才 Telegram 回的配對碼填進去。它會把你加進允許名單。</li>
+</ol>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge2cd294"></a>6. 測試<br />
+<ul class="org-ul">
+<li><a id="org74d82d1"></a>桌面版 Telegram<br />
+<div class="outline-text-6" id="text-org74d82d1">
+<p>
+打開剛建好的 bot 對話框，再傳一句話確認它會回：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>你是誰？
+</code></code></pre>
+</div>
+</div>
+</li>
+<li><a id="orgfda8d09"></a>手機 Telegram<br />
+<div class="outline-text-6" id="text-orgfda8d09">
+<p>
+打開 Telegram app，搜尋剛建好的 bot 對話框，再傳一句：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請列出桌面上「研習」資料夾裡的所有檔案。
+</code></code></pre>
+</div>
+<ul class="org-ul">
+<li>觀察Telegram上機器人的狀態，有沒有出現「正在輸入」或是「&#x2026; typing」的訊息，表示 Hermes 收到訊息並在處理。</li>
+<li>留意系統跳出的訊息，可能會要求認證或核准。</li>
+<li>實際執行的是筆電，不是手機。</li>
+</ul>
+</div>
+</li>
+<li><a id="orgea30e71"></a>接下來可以試：<br />
+<div class="outline-text-6" id="text-orgea30e71">
+<ul class="org-ul">
+<li><p>
+一個提醒：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>請在 3 分鐘後用 Telegram 提醒我：記得填回饋表單。
+</code></code></pre>
+</div></li>
+<li><p>
+你的信件提醒小助理
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt"><code><code>把每天早上八點的「今日重要信件」摘要，寄信之外也傳到這裡。
+</code></code></pre>
+</div></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-org2cb5ae7" class="outline-4">
+<h4 id="org2cb5ae7">[解說]</h4>
+<div class="outline-text-4" id="text-org2cb5ae7">
+<ul class="org-ul">
+<li>做法一和做法二效果一樣，都是把你的 Telegram 帳號加進 Hermes 的允許名單；桌面版有 Approve 按鈕，CLI 版只能在終端機打指令。</li>
+<li>Hermes 主動連去 Telegram 拉訊息，筆電不用對外網址，所以家裡的網路也能用；LINE 要公開的 webhook，所以今天不接。</li>
+<li>手機上傳的每一句話，實際執行的都是筆電；筆電關了，bot 就不回。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org08c0f23" class="outline-3">
+<h3 id="org08c0f23">8. 安全提醒、Q&amp;A、回家作業（15 分鐘）</h3>
+<div class="outline-text-3" id="text-org08c0f23">
+<p>
+打開 Hermes 的「設定」（桌面版才有這個畫面；裝 CLI 版的老師請看投影，兩個設定都可以課後請 Hermes 幫你改）：
+</p>
+<ul class="org-ul">
+<li>安全性（Safety）：維持預設值， <b>不要改</b>。這是讓它在做有風險的事之前先問你。</li>
+<li>進階（Advanced）：打開「保持電腦喚醒（Keep computer awake）」。電腦睡著時 Hermes 會停下來，打開這個選項，它工作到一半時電腦就不會睡著。</li>
+<li>安全提醒
+<ul class="org-ul">
+<li>安全性設定維持預設，不要隨手按「永遠允許」。</li>
+<li>學生的姓名、成績這類個資不要交給它，也不要放進記憶。</li>
+<li>今天的排程會每天讀你的信箱，不想要就請它刪掉排程；換回主要信箱前先想清楚它看得到所有信。</li>
+<li>撤銷權限的方法：到 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> ，把今天那組刪掉。之後 Hermes 就讀不到也寄不出，不用動 Hermes 任何設定；想再用就產生新的一組重設一次。</li>
+<li>想讓它 24 小時待命，要裝在雲端主機上（講義有完整步驟）。</li>
+</ul></li>
+<li>Q&amp;A</li>
+<li>回家作業（講義的綜合練習）
+<ul class="org-ul">
+<li>練習一：請它讀 教學研究會逐字稿.txt 整理成會議紀錄（摘要＋待辦表格），再用 <code>/learn</code> 存成 skill</li>
+<li>練習二：用校外教學資訊.md 寫家長通知草稿，只存檔不寄出，再設提醒</li>
+<li>練習三：用第 7 單元接好的 Telegram，請它每天早上八點把「今日重要信件」摘要也傳到手機；再試一個「3 分鐘後提醒我」</li>
+<li>練習四：用第 3 單元查到的 PBL題目.md，請它把其中一個題目展開成一份國中生用的學習單和一張評量規準（Rubrics）表，存到桌面「研習」資料夾</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2026-11-19（四）</p>
+<p class="author">Author: 顏永進</p>
+<p class="date">Created: 2026-10-23 五 16:17</p>
+</div>
+</body>
+</html>

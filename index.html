@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-10-23 五 16:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>龍蝦養殖實務：課前安裝說明</title>
+<meta name="author" content="顏永進" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="css/muse.css" />
+<script src="css/copy_code.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">龍蝦養殖實務：課前安裝說明
+<br />
+<span class="subtitle">臺南市國教輔導團科技領域分團 第九場研習「教學的 AI 助理」｜11/19（四）9:10–12:30｜臺南市中山國中科技中心 電腦教室</span>
+</h1>
+<div id="outline-container-org662f50b" class="outline-2">
+<h2 id="org662f50b">給參加的老師</h2>
+<div class="outline-text-2" id="text-org662f50b">
+<p>
+研習有三小時，但想把時間都留給實際操作，所以請在 <b>11/16（一）以前</b> 照著安裝影片和這份說明，把 Hermes 裝好。
+這次研習用 Hermes 來「養龍蝦」：它和最近很紅的龍蝦（OpenClaw）是同一類的 AI Agent，但安裝簡單得多，今天學的東西兩邊都通用。
+</p>
+
+<p>
+研習在臺南市中山國中科技中心的電腦教室上課，但 <b>請帶自己的筆電，不要用教室的電腦</b>。Hermes 要裝在你會帶回家的電腦上，研習後它的排程、信箱才會繼續在你手上運作；教室電腦重開就還原，裝了也白裝。對操作沒把握的老師請提早到，卡住時有人可以直接幫你看。
+</p>
+
+<ul class="org-ul">
+<li>安裝影片：
+<ul class="org-ul">
+<li><a href="https://youtu.be/hZUf81GGjiA">Hermes 1 設定ChatGPT</a></li>
+<li><a href="https://youtu.be/junAjFtTQAI">Hermes 2 下載安裝 Windows</a></li>
+<li><a href="https://youtu.be/czTL30xN5l4">Hermes 2 下載安裝 Mac</a></li>
+</ul></li>
+<li>整個過程要連網路。研習當天的重點是讓 Hermes 讀你的信、寄信、再接到 Telegram，第四步「準備 Gmail 的應用程式密碼」和手機上的 Telegram 請一定要準備。</li>
+</ul>
+</div>
+<div id="outline-container-org6a0ef51" class="outline-3">
+<h3 id="org6a0ef51">你需要準備</h3>
+<div class="outline-text-3" id="text-org6a0ef51">
+<ul class="org-ul">
+<li>一台自己的筆電（不是學校教室的電腦），研習當天帶來，記得帶電源線
+<ul class="org-ul">
+<li>Mac：Apple 晶片（M1 以後）可以裝桌面版；Intel 晶片的 Mac 不能裝桌面版，要改裝 CLI 版（見<a href="#org53cd6db">常見問題</a>）。
+不確定的話，點左上角的蘋果圖示 →「關於這台 Mac」，「晶片」那一欄寫 Apple M 開頭就是 Apple 晶片。</li>
+<li>Windows：Windows 10 或 11</li>
+</ul></li>
+<li>一個 ChatGPT 帳號，用來幫 Hermes 接上模型</li>
+<li>一個 Gmail 帳號（個人或學校的都可以），研習當天會讓 Hermes 讀這個信箱、從這個信箱寄信（見第四步）</li>
+<li>一支裝好 Telegram 並且已經登入的手機。研習當天會把 Hermes 接到 Telegram，讓它把信件摘要推到手機；電腦上也要能用同一個帳號登入 Telegram 網頁版 <a href="https://web.telegram.org">https://web.telegram.org</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8df7839" class="outline-2">
+<h2 id="org8df7839">一、打開 ChatGPT 的 device code 授權</h2>
+<div class="outline-text-2" id="text-org8df7839">
+</div>
+<div id="outline-container-orgc563988" class="outline-3">
+<h3 id="orgc563988">影片教學</h3>
+<div class="outline-text-3" id="text-orgc563988">
+<p>
+<a href="https://youtu.be/hZUf81GGjiA">Hermes 1 設定ChatGPT</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org5bb2bc0" class="outline-3">
+<h3 id="org5bb2bc0">文字教學</h3>
+<div class="outline-text-3" id="text-org5bb2bc0">
+<p>
+Hermes 登入 ChatGPT 的方式要用到這個設定，它預設是關閉的，請先把它打開：
+</p>
+<ol class="org-ol">
+<li>用瀏覽器打開 <a href="https://chatgpt.com">https://chatgpt.com</a> ，登入你的帳號。</li>
+<li>點左下角的頭像，選 <code>設定/Settings</code>。</li>
+<li>進入 <code>安全性與登入/Security and login</code> 頁面。</li>
+<li>找到 <code>應用程式安全性/App security</code> 授權的開關，把它打開。開關的名稱可能是英文，例如 <code>啟用 Codex、Excel、PowerPoint 和 Word 的裝置代碼登入/Enable device code sign-in for Codex, Excel, PowerPoint, and Word</code>，以畫面上的文字為準。</li>
+</ol>
+
+<div id="org6307647" class="figure">
+<p><img src="一、打開_ChatGPT_的_device_code_授權/2026-10-09_14-52-25.png" alt="2026-10-09_14-52-25.png" width="600" />
+</p>
+<p><span class="figure-number">Figure 1: </span>打開 ChatGPT 的 device code 授權</p>
+</div>
+
+<p>
+如果你的 ChatGPT 是學校或單位統一開的工作區帳號，這個開關可能是灰色的或看不到，要請管理員打開，或改用個人帳號。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3d86d67" class="outline-2">
+<h2 id="org3d86d67">二、下載、安裝、設定 Hermes</h2>
+<div class="outline-text-2" id="text-org3d86d67">
+</div>
+<div id="outline-container-org481f800" class="outline-3">
+<h3 id="org481f800">影片教學</h3>
+<div class="outline-text-3" id="text-org481f800">
+<ul class="org-ul">
+<li><a href="https://youtu.be/junAjFtTQAI">Hermes 2 下載安裝 Windows</a></li>
+<li><a href="https://youtu.be/czTL30xN5l4">Hermes 2 下載安裝 Mac</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf2427c2" class="outline-3">
+<h3 id="orgf2427c2">文字教學</h3>
+<div class="outline-text-3" id="text-orgf2427c2">
+</div>
+<div id="outline-container-org3f2f67f" class="outline-4">
+<h4 id="org3f2f67f">下載與安裝</h4>
+<div class="outline-text-4" id="text-org3f2f67f">
+<ol class="org-ol">
+<li><p>
+到官方網站 <a href="https://hermes-agent.nousresearch.com/">https://hermes-agent.nousresearch.com/</a> ，往下拉到 <code>Hermes Desktop App</code>，下載桌面版（不要用終端機指令那一種）。
+</p>
+
+<div id="orge4a7925" class="figure">
+<p><img src="三、登入_ChatGPT/2026-10-09_14-55-12.png" alt="2026-10-09_14-55-12.png" width="600" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Hermes 官方網站</p>
+</div></li>
+<li>執行安裝檔：
+<ul class="org-ul">
+<li>Mac 下載的是 Hermes-Setup.dmg：打開後把 Hermes 圖示拖進「應用程式（Applications）」資料夾，再到「應用程式」裡打開 Hermes。如果跳出警告，選「打開」。</li>
+<li>Windows 下載的是 Hermes-Setup.exe：直接執行。</li>
+</ul></li>
+<li>按 <code>Install</code>。安裝程式會自動上網下載需要的元件，大約幾分鐘（也可能要幾十分鐘 -_-），等它跑完就好。
+<ul class="org-ul">
+<li>Windows 安裝到一半如果跳出要安裝 Visual Studio，請選「是」，選「否」會沒辦法繼續安裝。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgaf170f2" class="outline-4">
+<h4 id="orgaf170f2">連接 ChatGPT</h4>
+<div class="outline-text-4" id="text-orgaf170f2">
+<ol class="org-ol">
+<li>安裝完成後按 <code>Launch</code>，會出現 <code>開始設定 Hermes Agent</code> 的畫面。上面兩個選項（付費模型、本地模型）都不要選，點 <code>其他提供方/Other Providers</code>，再選 <code>ChatGPT or Codex Subscription</code>。</li>
+<li>Hermes 會自動打開瀏覽器，用你的 ChatGPT 帳號登入，按 <code>Continue/繼續</code>。</li>
+<li>瀏覽器會要你輸入一組九個字元的驗證碼。回到 Hermes 的畫面，驗證碼就在那裡，把它複製貼上（不能貼的話就照著打）到瀏覽器，按 <code>Continue/繼續</code>。</li>
+<li>瀏覽器顯示登入成功後就可以關掉。回到 Hermes，畫面顯示「已連線」，按 <code>開始</code>。</li>
+<li>試著跟它打個招呼，有回覆就表示安裝完成了。</li>
+<li><p>
+如果登入沒有成功
+先確認第一步的 device code 授權開關有打開。還是不行的話，打開終端機（Mac 叫「終端機」，Windows 用 PowerShell），輸入：
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><code><code>hermes model
+</code></code></pre>
+</div>
+<p>
+在清單裡選 ChatGPT or Codex Subscription，畫面上會出現一個網址和一組驗證碼，用瀏覽器打開網址、登入 ChatGPT、輸入驗證碼。
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8674e61" class="outline-2">
+<h2 id="org8674e61">三、下載研習素材</h2>
+<div class="outline-text-2" id="text-org8674e61">
+<p>
+最簡單的做法：下載 <a href="https://letranger.github.io/2026-hermes-3hr/%E7%A0%94%E7%BF%92.zip">研習.zip</a>，解壓縮後會得到一個「研習」資料夾，裡面有四個檔案，把整個資料夾拖到桌面上就完成了。
+</p>
+<ul class="org-ul">
+<li>Mac：下載後在 Finder 裡點兩下 zip 就會解開。</li>
+<li>Windows：下載後在 zip 上按右鍵，選「全部解壓縮」，再把解開的「研習」資料夾拖到桌面。注意不要變成「研習\研習」兩層。</li>
+</ul>
+<p>
+資料夾名稱就是「研習」兩個字，前後不要有空白，也不要放進桌面上的其他資料夾裡。
+</p>
+
+<p>
+如果 zip 下載或解壓有問題，改用手動方式：
+</p>
+<ol class="org-ol">
+<li>在你的桌面裡建立一個「研習」資料夾。
+<ul class="org-ul">
+<li>Mac：回到桌面，在空白的地方按右鍵（觸控板用兩指點按），選「新增檔案夾」，名稱改成「研習」。</li>
+<li>Windows：回到桌面，在空白的地方按右鍵，選「新增」→「資料夾」，名稱改成「研習」。</li>
+</ul></li>
+<li>下載四個素材檔，放進這個資料夾（在連結上按右鍵，選「另存連結為」）：
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/2026-hermes-3hr/%E6%AE%B5%E8%80%83%E6%88%90%E7%B8%BE.csv">段考成績.csv</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-3hr/%E6%95%99%E5%AD%B8%E7%A0%94%E7%A9%B6%E6%9C%83%E9%80%90%E5%AD%97%E7%A8%BF.txt">教學研究會逐字稿.txt</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-3hr/%E6%A0%A1%E5%A4%96%E6%95%99%E5%AD%B8%E8%B3%87%E8%A8%8A.md">校外教學資訊.md</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-3hr/SOUL%E7%AF%84%E6%9C%AC.md">SOUL範本.md</a></li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3d70daa" class="outline-2">
+<h2 id="org3d70daa">四、準備 Gmail 的應用程式密碼</h2>
+<div class="outline-text-2" id="text-org3d70daa">
+<p>
+研習當天會讓 Hermes 讀你的信、整理成摘要、再寄給你。課前只要準備一樣東西：一組讓 Hermes 登入 Gmail 用的「應用程式密碼」。其他設定當天讓 Hermes 做。
+</p>
+</div>
+<div id="outline-container-orgd694d56" class="outline-3">
+<h3 id="orgd694d56">用哪個 Gmail</h3>
+<div class="outline-text-3" id="text-orgd694d56">
+<ul class="org-ul">
+<li>個人 Gmail 或學校的 Google 帳號都可以，條件是下一步產生得出應用程式密碼。學校帳號若管理員關掉這個功能，就改用個人 Gmail。</li>
+<li>建議另外申請一個專門給 Hermes 用的 Gmail，不要用你的主要信箱。原因：Hermes 接上後看得到這個信箱裡的所有信，而且密碼會存在電腦的設定檔裡。</li>
+<li>申請好之後，自己寄三、四封信進去當素材：例如一封有日期的會議通知、一封研習邀請、一封廣告。當天 Hermes 才有東西可以整理。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc8e0f70" class="outline-3">
+<h3 id="orgc8e0f70">產生應用程式密碼</h3>
+<div class="outline-text-3" id="text-orgc8e0f70">
+<p>
+應用程式密碼是 Google 給「第三方程式」用的 16 字元密碼，不是你登入 Gmail 的密碼。要先開兩步驟驗證才能產生。
+請在 <b>你平常用的電腦或手機</b> 上做這一步。Google 在不熟悉的裝置或網路上會擋住安全性設定（畫面寫「We couldn&rsquo;t verify it&rsquo;s you」），研習現場才做很容易卡住。
+</p>
+<ol class="org-ol">
+<li>用瀏覽器登入這個 Gmail，打開 <a href="https://myaccount.google.com/security">https://myaccount.google.com/security</a> 。</li>
+<li>找到 <code>兩步驟驗證</code>，如果還沒開，照畫面指示開啟（要用手機收一次驗證碼）。</li>
+<li><p>
+開好後打開這個網址（請直接貼到瀏覽器，這是唯一能產生應用程式密碼的地方）：
+</p>
+<pre class="example" id="orgcc91b6b">
+https://myaccount.google.com/apppasswords
+</pre>
+<p>
+也可以在「兩步驟驗證」頁面最下方找 <code>應用程式密碼</code>。
+</p></li>
+<li>在「應用程式名稱」填 <code>Hermes</code>，按 <code>建立</code>。</li>
+<li>畫面會顯示一組 16 個字母的密碼，分成四組，例如 <code>abcd efgh ijkl mnop</code>。 <b>把它抄下來</b>，這個畫面關掉後就看不到了；忘了就重新建一組。</li>
+<li>瀏覽器若跳出「要不要儲存密碼」，選「現在不要」。</li>
+<li>研習當天要用的就是這組密碼。 <b>使用時把空格去掉，自己一個字一個字打 16 個字母</b>，不要用複製貼上，空格一起貼進去是最常見的失敗原因。</li>
+</ol>
+
+<p>
+研習結束後如果不想讓 Hermes 繼續讀信，回到同一個頁面把這組密碼刪掉就好，之後 Hermes 就連不上。
+</p>
+</div>
+</div>
+<div id="outline-container-org76ee010" class="outline-3">
+<h3 id="org76ee010">（選做）自己寫設定檔</h3>
+<div class="outline-text-3" id="text-org76ee010">
+<p>
+研習當天會讓 Hermes 幫你裝 himalaya、建設定檔，所以課前不用做。當天沒接上要回家補的人，照下面做（前提是 himalaya 已經裝好，對 Hermes 說「請幫我安裝 himalaya」即可）。
+</p>
+<ol class="org-ol">
+<li><p>
+建立設定檔，位置：
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">系統</th>
+<th scope="col" class="org-left">路徑</th>
+<th scope="col" class="org-left">怎麼到那裡</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Mac</td>
+<td class="org-left"><code>~/.config/himalaya/config.toml</code></td>
+<td class="org-left">Finder 按 ⌘⇧G，貼 <code>~/.config</code>，自己建 himalaya 資料夾</td>
+</tr>
+
+<tr>
+<td class="org-left">Windows</td>
+<td class="org-left"><code>C:\Users\你的帳號\.config\himalaya\config.toml</code></td>
+<td class="org-left">檔案總管網址列貼 <code>%USERPROFILE%\.config</code>，自己建 himalaya 資料夾</td>
+</tr>
+</tbody>
+</table>
+<p>
+用「文字編輯」（Mac）或「記事本」（Windows）新增檔案，檔名就是 <code>config.toml</code>，Mac 的文字編輯要先在「格式」選「製作純文字」。
+</p></li>
+<li><p>
+把下面整段貼進去，三處 <code>你的信箱</code> 換成你的 Gmail，兩處 <code>xxxxxxxxxxxxxxxx</code> 換成應用程式密碼（ <b>16 個字母、不含空格、自己打</b>）：
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><code><code>[<span class="org-type">accounts.gmail</span>]
+<span class="org-variable-name">email</span> = <span class="org-string">"&#20320;&#30340;&#20449;&#31665;@gmail.com"</span>
+<span class="org-variable-name">display-name</span> = <span class="org-string">"Hermes"</span>
+<span class="org-variable-name">default</span> = <span class="org-keyword">true</span>
+
+<span class="org-variable-name">backend.type</span> = <span class="org-string">"imap"</span>
+<span class="org-variable-name">backend.host</span> = <span class="org-string">"imap.gmail.com"</span>
+<span class="org-variable-name">backend.port</span> = 993
+<span class="org-variable-name">backend.encryption.type</span> = <span class="org-string">"tls"</span>
+<span class="org-variable-name">backend.login</span> = <span class="org-string">"&#20320;&#30340;&#20449;&#31665;@gmail.com"</span>
+<span class="org-variable-name">backend.auth.type</span> = <span class="org-string">"password"</span>
+<span class="org-variable-name">backend.auth.raw</span> = <span class="org-string">"xxxxxxxxxxxxxxxx"</span>
+
+<span class="org-variable-name">message.send.backend.type</span> = <span class="org-string">"smtp"</span>
+<span class="org-variable-name">message.send.backend.host</span> = <span class="org-string">"smtp.gmail.com"</span>
+<span class="org-variable-name">message.send.backend.port</span> = 587
+<span class="org-variable-name">message.send.backend.encryption.type</span> = <span class="org-string">"start-tls"</span>
+<span class="org-variable-name">message.send.backend.login</span> = <span class="org-string">"&#20320;&#30340;&#20449;&#31665;@gmail.com"</span>
+<span class="org-variable-name">message.send.backend.auth.type</span> = <span class="org-string">"password"</span>
+<span class="org-variable-name">message.send.backend.auth.raw</span> = <span class="org-string">"xxxxxxxxxxxxxxxx"</span>
+
+<span class="org-variable-name">folder.aliases.inbox</span> = <span class="org-string">"INBOX"</span>
+<span class="org-variable-name">folder.aliases.sent</span> = <span class="org-string">"[Gmail]/Sent Mail"</span>
+<span class="org-variable-name">folder.aliases.drafts</span> = <span class="org-string">"[Gmail]/Drafts"</span>
+<span class="org-variable-name">folder.aliases.trash</span> = <span class="org-string">"[Gmail]/Trash"</span>
+</code></code></pre>
+</div>
+<p>
+學校帳號的話 <code>你的信箱@gmail.com</code> 就換成學校信箱，其他不變。
+</p></li>
+<li><p>
+存檔後打開終端機（Mac 的「終端機」或 Windows 的 PowerShell），輸入：
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><code><code>himalaya envelope list
+</code></code></pre>
+</div>
+<p>
+列出收件匣的信就是通了。
+</p></li>
+<li>常見錯誤：
+<ul class="org-ul">
+<li><code>Invalid credentials</code> 或 <code>535 Username and Password not accepted</code>：密碼不對，九成是空格一起打進去，或打成登入密碼。重打 16 個字母。</li>
+<li><code>534 Application-specific password required</code>：這個帳號要應用程式密碼，你給的不是；回第二步重新產生。</li>
+<li>找不到 <code>himalaya</code> 指令：關掉終端機重開；還是不行就問 Hermes「himalaya 裝在哪裡」。</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3d2ed6b" class="outline-3">
+<h3 id="org3d2ed6b">檢查清單</h3>
+<div class="outline-text-3" id="text-org3d2ed6b">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 有一個 Gmail，裡面有幾封信</li>
+<li class="off"><code>[&#xa0;]</code> 從 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> 抄下了 16 字元的應用程式密碼</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org53cd6db" class="outline-2">
+<h2 id="org53cd6db">常見問題</h2>
+<div class="outline-text-2" id="text-org53cd6db">
+<dl class="org-dl">
+<dt>Windows 安裝到一半跳出要安裝 Visual Studio</dt><dd>請選「是」，等它裝完，Hermes 才會繼續安裝。</dd>
+<dt>我的 Mac 是 Intel 晶片</dt><dd><p>
+桌面版不支援 Intel Mac，請改裝 CLI 版（在終端機裡使用，功能相同，只是沒有視窗介面）：
+</p>
+<ol class="org-ol">
+<li>先完成第一步，打開 ChatGPT 的 device code 授權。</li>
+<li><p>
+打開「終端機」，貼上這一行後按 Enter，等它安裝完成：
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><code><code>curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+</code></code></pre>
+</div></li>
+<li><p>
+安裝完後關掉終端機再重新打開，輸入：
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><code><code>hermes model
+</code></code></pre>
+</div>
+<p>
+在清單裡選 <code>ChatGPT or Codex Subscription</code> （不要選 Nous Portal），用瀏覽器打開畫面上的網址、登入 ChatGPT、輸入驗證碼。
+</p></li>
+<li>輸入 <code>hermes</code> 就可以開始對話。</li>
+</ol>
+<p>
+注意：對話裡的 <code>/login</code> 登入的是 Nous Portal，不是 ChatGPT，要連 ChatGPT 請用上面的 <code>hermes model</code>。如果不想用終端機，也可以改帶 Windows 筆電。
+</p></dd>
+<dt>找不到 device code 授權的開關</dt><dd>如果是學校或單位的工作區帳號，請改用個人帳號。</dd>
+<dt>學校的電腦不能裝軟體</dt><dd>請改用自己的筆電。</dd>
+<dt>照著做還是裝不起來</dt><dd>研習當天請在 <b>8:45</b> 先到會場，我們會在開始前幫你處理。</dd>
+<dt>可以用學校的 Google 帳號嗎？</dt><dd>可以，前提是 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> 這一頁打得開、產生得出密碼（台南一中的 gm.tnfsh 帳號可以）。不過研習會讓 Hermes 讀整個信箱，還是建議另外申請一個個人 Gmail。</dd>
+<dt>應用程式密碼找不到</dt><dd>一定要先開兩步驟驗證，開好後 <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a> 才會出現。如果頁面說這個帳號不能用，通常是學校或公司帳號，請換個人 Gmail。</dd>
+<dt>打開應用程式密碼頁面時出現「We couldn&rsquo;t verify it&rsquo;s you」</dt><dd>Google 不認得你現在用的裝置或網路。換到平常登入這個帳號的電腦或手機上再做；如果哪台裝置都沒登入過，先在手機上登入一次、完成簡訊驗證，再開這一頁。</dd>
+<dt>一定要付費的 ChatGPT 嗎？</dt><dd>不一定。Hermes 可以用免費的 ChatGPT 帳號，但免費帳號有用量限制，三小時的研習操作不少，有付費帳號（Plus 以上）的老師建議用付費帳號。用免費帳號的老師，安裝完成後請不要瘋玩，以免用量超過限制，導致研習當天無法使用。</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: 顏永進</p>
+<p class="date">Created: 2026-10-23 五 16:17</p>
+</div>
+</body>
+</html>
