@@ -25,7 +25,8 @@
   <text x="105" y="172" text-anchor="middle" class="cap">Telegram app</text>
   <text x="105" y="196" text-anchor="middle" class="small">同一個帳號，手機、電腦</text>
   <text x="105" y="212" text-anchor="middle" class="small">都看得到同一個對話</text>
-  <text x="105" y="236" text-anchor="middle" class="small">/sethome 只做一次</text>
+  <text x="105" y="232" text-anchor="middle" class="small">第一次按 Start 拿配對碼</text>
+  <text x="105" y="248" text-anchor="middle" class="small">回 Hermes 按 Approve</text>
   <!-- telegram cloud -->
   <rect x="270" y="100" width="260" height="170" class="box ext"/>
   <text x="400" y="128" text-anchor="middle" class="lbl">Telegram 伺服器（雲端）</text>
@@ -50,7 +51,7 @@
   <text x="580" y="140" text-anchor="middle" class="small" fill="#2a7">Hermes 主動連出去</text>
   <!-- note -->
   <rect x="24" y="316" width="912" height="64" class="note"/>
-  <text x="480" y="338" text-anchor="middle" class="cap">因為是 Hermes 主動連出去，筆電不需要對外的網址，掃個 QR 碼就能接。</text>
+  <text x="480" y="338" text-anchor="middle" class="cap">因為是 Hermes 主動連出去，筆電不需要對外的網址，貼一組 token 就能接。</text>
   <text x="480" y="358" text-anchor="middle" class="cap">LINE 則是要 LINE 主動連進你的筆電，得自己架公開網址，所以課程不碰 LINE。</text>
   <text x="480" y="374" text-anchor="middle" class="small">手機上的訊息其實是筆電在執行；人不在電腦旁也能交代工作、收到結果，這才是接 Telegram 的價值。</text>
 </svg>
