@@ -25,7 +25,7 @@
   <!-- ② 操作瀏覽器 -->
   <rect x="335" y="56" width="290" height="270" class="hl"/>
   <text x="480" y="86" text-anchor="middle" class="lbl">② 操作瀏覽器</text>
-  <text x="480" y="106" text-anchor="middle" class="small">第 5.5 單元：開常用網站、用 Gmail 網頁寄信</text>
+  <text x="480" y="106" text-anchor="middle" class="small">第 6 單元：開常用網站、用 Gmail 網頁寄信</text>
   <text x="351" y="140" class="cap" font-weight="700">像：助理坐到電腦前幫你點網頁</text>
   <text x="351" y="168" class="cap">能做：開網頁、點、填表、送出</text>
   <text x="351" y="192" class="cap">用的是你在那個視窗登入的帳號</text>
@@ -37,7 +37,7 @@
   <!-- ③ 程式介面 -->
   <rect x="646" y="56" width="290" height="270" class="box"/>
   <text x="791" y="86" text-anchor="middle" class="lbl">③ 程式介面</text>
-  <text x="791" y="106" text-anchor="middle" class="small">第 6 單元：himalaya 收發 Gmail</text>
+  <text x="791" y="106" text-anchor="middle" class="small">第 7 單元：himalaya 收發 Gmail</text>
   <text x="662" y="140" class="cap" font-weight="700">像：直接打電話給信箱系統</text>
   <text x="662" y="168" class="cap">能做：不看畫面，直接收信、寄信</text>
   <text x="662" y="192" class="cap">要有人先做好介面（IMAP／SMTP）</text>

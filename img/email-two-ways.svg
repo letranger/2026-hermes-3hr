@@ -15,7 +15,7 @@
 
   <!-- 左：himalaya -->
   <rect x="24" y="56" width="444" height="300" class="panel"/>
-  <text x="246" y="86" text-anchor="middle" class="lbl">① himalaya（第 6 單元）</text>
+  <text x="246" y="86" text-anchor="middle" class="lbl">① himalaya（第 7 單元）</text>
   <text x="246" y="106" text-anchor="middle" class="small">信箱是 Hermes 要處理的「工作對象」</text>
   <rect x="44" y="134" width="110" height="56" class="user"/>
   <text x="99" y="160" text-anchor="middle" class="lbl">你</text>
