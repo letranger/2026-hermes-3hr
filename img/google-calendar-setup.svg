@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.agent{fill:#e2f5e9}.ext{fill:#e6ecfb}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+    .agentbox{fill:#e2f5e9;stroke:#2a7;stroke-width:1.6;rx:8}
+  </style>
+  <text x="24" y="34" class="title">Hermes 接 Google 行事曆：先在 Google 那邊開門，再讓 Hermes 拿鑰匙</text>
+
+  <!-- 第一排：Google Cloud Console -->
+  <text x="40" y="72" class="cap" font-weight="700">你自己在 Google Cloud Console 點（只做一次，約 10 分鐘）</text>
+  <rect x="40" y="84" width="260" height="96" class="box ext"/>
+  <text x="170" y="112" text-anchor="middle" class="lbl">① 建專案、開 API</text>
+  <text x="170" y="138" text-anchor="middle" class="cap">建一個 Google Cloud 專案</text>
+  <text x="170" y="158" text-anchor="middle" class="cap">啟用 Google Calendar API</text>
+
+  <rect x="350" y="84" width="260" height="96" class="box ext"/>
+  <text x="480" y="112" text-anchor="middle" class="lbl">② 同意畫面、測試使用者</text>
+  <text x="480" y="138" text-anchor="middle" class="cap">填應用程式名稱和信箱</text>
+  <text x="480" y="158" text-anchor="middle" class="cap">把自己的帳號加成測試使用者</text>
+
+  <rect x="660" y="84" width="260" height="96" class="box ext"/>
+  <text x="790" y="112" text-anchor="middle" class="lbl">③ OAuth 用戶端</text>
+  <text x="790" y="138" text-anchor="middle" class="cap">類型選「電腦版應用程式」</text>
+  <text x="790" y="158" text-anchor="middle" class="cap">下載 client_secret….json</text>
+
+  <line x1="300" y1="132" x2="342" y2="132" class="line"/>
+  <line x1="610" y1="132" x2="652" y2="132" class="line"/>
+  <line x1="790" y1="180" x2="790" y2="234" class="line"/>
+  <text x="800" y="212" class="small">把 JSON 路徑告訴 Hermes</text>
+
+  <!-- 第二排：Hermes 帶你做 -->
+  <text x="40" y="228" class="cap" font-weight="700">Hermes 帶你做</text>
+  <rect x="660" y="242" width="260" height="96" class="box agent"/>
+  <text x="790" y="270" text-anchor="middle" class="lbl">④ 授權網址</text>
+  <text x="790" y="296" text-anchor="middle" class="cap">Hermes 給你一個網址</text>
+  <text x="790" y="316" text-anchor="middle" class="cap">在瀏覽器登入、按允許</text>
+
+  <rect x="350" y="242" width="260" height="96" class="box user"/>
+  <text x="480" y="270" text-anchor="middle" class="lbl">⑤ 把網址貼回去</text>
+  <text x="480" y="296" text-anchor="middle" class="cap">頁面跳到 localhost:1 顯示錯誤</text>
+  <text x="480" y="316" text-anchor="middle" class="cap">是正常的，整串網址貼給 Hermes</text>
+
+  <rect x="40" y="242" width="260" height="96" class="box agent"/>
+  <text x="170" y="270" text-anchor="middle" class="lbl">⑥ 拿到鑰匙</text>
+  <text x="170" y="296" text-anchor="middle" class="cap">存成 google_token.json</text>
+  <text x="170" y="316" text-anchor="middle" class="cap">檢查出現 AUTHENTICATED</text>
+
+  <line x1="660" y1="290" x2="618" y2="290" class="line"/>
+  <line x1="350" y1="290" x2="308" y2="290" class="line"/>
+
+  <!-- 常見卡點 -->
+  <rect x="24" y="362" width="560" height="104" class="note"/>
+  <text x="40" y="386" class="cap" font-weight="700">常見卡點</text>
+  <text x="40" y="410" class="cap">Error 403: access_denied → ② 沒把自己加成測試使用者</text>
+  <text x="40" y="432" class="cap">大約一週後讀不到（REFRESH_FAILED）→ 測試狀態的鑰匙 7 天到期，重做 ④–⑥</text>
+  <text x="40" y="454" class="cap">活動時間差 8 小時 → 時間沒帶台灣時區 +08:00</text>
+
+  <!-- 接好之後 -->
+  <rect x="604" y="362" width="332" height="104" class="agentbox"/>
+  <text x="620" y="386" class="cap" font-weight="700">接好之後</text>
+  <text x="620" y="410" class="cap">列出行程、新增活動、刪除活動</text>
+  <text x="620" y="432" class="cap">新增、刪除之前它會先問你</text>
+  <text x="620" y="454" class="small">文件沒有「修改活動」，要改就刪掉重建</text>
+</svg>

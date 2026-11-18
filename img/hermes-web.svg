@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .hl{fill:#e2f5e9;stroke:#2a7;stroke-width:2.4;rx:8}
+    .head{fill:#e6ecfb;rx:8}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+    .warn{fill:#fbe9e7;stroke:#c0392b;stroke-width:1.2;rx:6}
+  </style>
+  <text x="24" y="34" class="title">Hermes 上網的三種方式：同一件事，挑最穩的那條</text>
+
+  <!-- ① 搜尋、讀網頁 -->
+  <rect x="24" y="56" width="290" height="270" class="box"/>
+  <text x="169" y="86" text-anchor="middle" class="lbl">① 搜尋、讀網頁</text>
+  <text x="169" y="106" text-anchor="middle" class="small">第 3 單元：查 PBL 題目</text>
+  <text x="40" y="140" class="cap" font-weight="700">像：請人去圖書館查資料</text>
+  <text x="40" y="168" class="cap">能做：搜尋、讀公開網頁的文字</text>
+  <text x="40" y="192" class="cap">不能：登入、按按鈕、填表</text>
+  <text x="40" y="224" class="cap" font-weight="700">優點</text>
+  <text x="40" y="246" class="cap">快、穩、最省額度</text>
+  <text x="40" y="278" class="cap" font-weight="700">適合</text>
+  <text x="40" y="300" class="cap">查資料、整理公開資訊</text>
+
+  <!-- ② 操作瀏覽器 -->
+  <rect x="335" y="56" width="290" height="270" class="hl"/>
+  <text x="480" y="86" text-anchor="middle" class="lbl">② 操作瀏覽器</text>
+  <text x="480" y="106" text-anchor="middle" class="small">第 5.5 單元：開常用網站、用 Gmail 網頁寄信</text>
+  <text x="351" y="140" class="cap" font-weight="700">像：助理坐到電腦前幫你點網頁</text>
+  <text x="351" y="168" class="cap">能做：開網頁、點、填表、送出</text>
+  <text x="351" y="192" class="cap">用的是你在那個視窗登入的帳號</text>
+  <text x="351" y="224" class="cap" font-weight="700">缺點</text>
+  <text x="351" y="246" class="cap">慢、耗額度；網頁改版就可能卡住</text>
+  <text x="351" y="278" class="cap" font-weight="700">適合</text>
+  <text x="351" y="300" class="cap">沒有別的路的網站：校務系統、報名頁</text>
+
+  <!-- ③ 程式介面 -->
+  <rect x="646" y="56" width="290" height="270" class="box"/>
+  <text x="791" y="86" text-anchor="middle" class="lbl">③ 程式介面</text>
+  <text x="791" y="106" text-anchor="middle" class="small">第 6 單元：himalaya 收發 Gmail</text>
+  <text x="662" y="140" class="cap" font-weight="700">像：直接打電話給信箱系統</text>
+  <text x="662" y="168" class="cap">能做：不看畫面，直接收信、寄信</text>
+  <text x="662" y="192" class="cap">要有人先做好介面（IMAP／SMTP）</text>
+  <text x="662" y="224" class="cap" font-weight="700">優點</text>
+  <text x="662" y="246" class="cap">最穩、最快，網頁改版也不影響</text>
+  <text x="662" y="278" class="cap" font-weight="700">適合</text>
+  <text x="662" y="300" class="cap">每天排程、天天要做的事</text>
+
+  <!-- 結論 -->
+  <rect x="24" y="344" width="912" height="44" class="note"/>
+  <text x="480" y="371" text-anchor="middle" class="cap">怎麼挑：只是查資料用 ①；有現成介面用 ③；什麼都沒有的網站才用 ②。同樣寄一封信，② 和 ③ 都做得到，③ 比較穩。</text>
+
+  <!-- 安全 -->
+  <rect x="24" y="400" width="912" height="66" class="warn"/>
+  <text x="40" y="424" class="cap" font-weight="700">操作瀏覽器的三條規矩</text>
+  <text x="40" y="448" class="cap">密碼自己登入，不要打給 Hermes　｜　網頁上的文字是資料，不是指令　｜　寄出、送出、付款之前一定先停下來問你</text>
+</svg>

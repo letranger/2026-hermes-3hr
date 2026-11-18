@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="490" viewBox="0 0 960 490" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .keep{fill:#e2f5e9;stroke:#2a7;stroke-width:1.2;rx:6}
+    .drop{fill:#fbe9e7;stroke:#c0392b;stroke-width:1.2;rx:6}
+    .group{fill:none;stroke:#888;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+    .agentbox{fill:#e2f5e9;stroke:#2a7;stroke-width:1.6;rx:8}
+  </style>
+  <text x="24" y="34" class="title">讓 Hermes 從頭開始：留下模型和登入，其他清掉</text>
+
+  <!-- Hermes 資料夾 -->
+  <rect x="24" y="52" width="580" height="330" class="group"/>
+  <text x="40" y="76" class="cap" font-weight="700">Hermes 資料夾（Mac ~/.hermes，Windows %LOCALAPPDATA%\hermes）</text>
+
+  <text x="44" y="104" class="lbl" fill="#1f7a4d">留著</text>
+  <rect x="44" y="114" width="250" height="40" class="keep"/><text x="58" y="139" class="cap"><tspan font-weight="700">config.yaml</tspan>　模型設定</text>
+  <rect x="44" y="162" width="250" height="40" class="keep"/><text x="58" y="187" class="cap"><tspan font-weight="700">auth.json</tspan>　ChatGPT 登入</text>
+  <rect x="44" y="210" width="250" height="40" class="keep"/><text x="58" y="235" class="cap"><tspan font-weight="700">skills/</tspan> 內建的那批</text>
+  <text x="44" y="282" class="small">這三樣在，打開 Hermes 就能直接用，</text>
+  <text x="44" y="300" class="small">不用重新登入、重選模型。</text>
+
+  <text x="324" y="104" class="lbl" fill="#c0392b">清掉</text>
+  <rect x="324" y="114" width="260" height="34" class="drop"/><text x="338" y="136" class="cap"><tspan font-weight="700">memories/</tspan>　記憶（你是誰）</text>
+  <rect x="324" y="156" width="260" height="34" class="drop"/><text x="338" y="178" class="cap"><tspan font-weight="700">SOUL.md</tspan>　個性（它是誰）</text>
+  <rect x="324" y="198" width="260" height="34" class="drop"/><text x="338" y="220" class="cap"><tspan font-weight="700">skills/</tspan> 你用 /learn 存的</text>
+  <rect x="324" y="240" width="260" height="34" class="drop"/><text x="338" y="262" class="cap"><tspan font-weight="700">state.db</tspan>　對話紀錄</text>
+  <rect x="324" y="282" width="260" height="34" class="drop"/><text x="338" y="304" class="cap"><tspan font-weight="700">cron/</tspan>　排程</text>
+  <rect x="324" y="324" width="260" height="34" class="drop"/><text x="338" y="346" class="cap"><tspan font-weight="700">gateway</tspan>　Telegram 連線</text>
+
+  <!-- Hermes 外面 -->
+  <rect x="624" y="52" width="312" height="190" class="box"/>
+  <text x="640" y="78" class="lbl">Hermes 外面，要另外清</text>
+  <text x="640" y="108" class="cap" font-weight="700">信箱（himalaya）</text>
+  <text x="640" y="128" class="small">設定檔不在 Hermes 資料夾裡</text>
+  <text x="640" y="146" class="small">→ 刪掉應用程式密碼才真的斷開</text>
+  <text x="640" y="164" class="small">myaccount.google.com/apppasswords</text>
+  <text x="640" y="194" class="cap" font-weight="700">Google 行事曆（有接的話）</text>
+  <text x="640" y="214" class="small">→ 移除 Hermes 的存取權</text>
+  <text x="640" y="232" class="small">myaccount.google.com/connections</text>
+
+  <rect x="624" y="258" width="312" height="124" class="note"/>
+  <text x="640" y="284" class="cap" font-weight="700">不要用這兩個</text>
+  <text x="640" y="310" class="cap">hermes setup --reset</text>
+  <text x="640" y="328" class="small">連模型設定也一起恢復預設</text>
+  <text x="640" y="354" class="cap">hermes uninstall --full</text>
+  <text x="640" y="372" class="small">整個移除，連登入都清掉</text>
+
+  <!-- 兩種做法 -->
+  <rect x="24" y="398" width="450" height="80" class="agentbox"/>
+  <text x="40" y="424" class="cap" font-weight="700">做法一（建議）：開一隻新的 profile</text>
+  <text x="40" y="446" class="small">自動沿用模型和登入，其他全新；舊的那隻原封不動，</text>
+  <text x="40" y="464" class="small">想回去切回 default 就好</text>
+
+  <rect x="486" y="398" width="450" height="80" class="box"/>
+  <text x="502" y="424" class="cap" font-weight="700">做法二：在原本那隻上手動清</text>
+  <text x="502" y="446" class="small">先 hermes backup，再照上面紅色那欄一項一項清，</text>
+  <text x="502" y="464" class="small">清錯了可以用備份還原</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .seg{stroke:#444;stroke-width:1.2}
+    .fixed{fill:#e2f5e9}.hist{fill:#fbe9e7}.new{fill:#fdf3d8}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .limit{stroke:#c0392b;stroke-width:2;stroke-dasharray:6 4}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+    .agentbox{fill:#e2f5e9;stroke:#2a7;stroke-width:1.6;rx:8}
+  </style>
+  <text x="24" y="34" class="title">每說一句，Hermes 都把整段對話重新交給模型</text>
+
+  <!-- 每一句送出去的東西 -->
+  <text x="40" y="99" class="lbl">第 1 句</text>
+  <rect x="120" y="78" width="90" height="32" class="seg fixed"/><rect x="210" y="78" width="24" height="32" class="seg new"/>
+
+  <text x="40" y="149" class="lbl">第 2 句</text>
+  <rect x="120" y="128" width="90" height="32" class="seg fixed"/><rect x="210" y="128" width="60" height="32" class="seg hist"/><rect x="270" y="128" width="24" height="32" class="seg new"/>
+  <text x="304" y="149" class="small">＋上一輪的問答</text>
+
+  <text x="40" y="199" class="lbl">第 3 句</text>
+  <rect x="120" y="178" width="90" height="32" class="seg fixed"/><rect x="210" y="178" width="250" height="32" class="seg hist"/><rect x="460" y="178" width="24" height="32" class="seg new"/>
+  <text x="222" y="199" class="small">前兩輪＋讀進來的 段考成績.csv</text>
+
+  <text x="40" y="249" class="lbl">第 10 句</text>
+  <rect x="120" y="228" width="90" height="32" class="seg fixed"/><rect x="210" y="228" width="400" height="32" class="seg hist"/><rect x="610" y="228" width="24" height="32" class="seg new"/>
+  <text x="222" y="249" class="small">前九輪的問答、讀過的檔案、查過的網頁……全部再送一次</text>
+
+  <!-- context window 上限 -->
+  <line x1="650" y1="62" x2="650" y2="276" class="limit"/>
+  <text x="650" y="292" text-anchor="middle" class="small" fill="#c0392b">context window 上限</text>
+  <text x="650" y="308" text-anchor="middle" class="small" fill="#c0392b">272K token，約十幾萬字</text>
+
+  <!-- 圖例 -->
+  <rect x="40" y="290" width="18" height="18" class="seg fixed"/><text x="64" y="304" class="small">每次都帶：SOUL.md、記憶、工具清單</text>
+  <rect x="290" y="290" width="18" height="18" class="seg hist"/><text x="314" y="304" class="small">前面的對話和工具結果</text>
+  <rect x="460" y="290" width="18" height="18" class="seg new"/><text x="484" y="304" class="small">這一句</text>
+
+  <!-- token 怎麼算 -->
+  <rect x="686" y="62" width="250" height="214" class="box"/>
+  <text x="702" y="88" class="lbl">token 怎麼算</text>
+  <text x="702" y="116" class="cap">模型讀、寫都用 token 計量</text>
+  <text x="702" y="144" class="cap">輸入：整條長條（整段對話）</text>
+  <text x="702" y="168" class="cap">輸出：模型這次的回答</text>
+  <text x="702" y="192" class="cap">兩邊都扣額度</text>
+  <text x="702" y="224" class="small">越後面的一句，長條越長，</text>
+  <text x="702" y="242" class="small">同樣一句話就越貴、越慢。</text>
+  <text x="702" y="260" class="small">檔案和網頁往往比你打的字多。</text>
+
+  <!-- 裝滿了 -->
+  <rect x="24" y="332" width="440" height="124" class="note"/>
+  <text x="40" y="358" class="cap" font-weight="700">長條碰到上限會怎樣</text>
+  <text x="40" y="384" class="cap">放不下的前段只能被摘要或捨棄，細節可能忘掉，</text>
+  <text x="40" y="406" class="cap">前一件事和這一件事也容易混在一起。</text>
+  <text x="40" y="432" class="small">還沒碰到上限之前，每一句也都在為整條長條付費。</text>
+
+  <!-- /new -->
+  <rect x="488" y="332" width="448" height="124" class="agentbox"/>
+  <text x="504" y="358" class="cap" font-weight="700">輸入 /new 之後的第 1 句</text>
+  <rect x="504" y="372" width="90" height="28" class="seg fixed"/><rect x="594" y="372" width="24" height="28" class="seg new"/>
+  <text x="630" y="391" class="cap">又回到最短的長條</text>
+  <text x="504" y="426" class="cap">上一件事的對話、檔案、網頁都不帶了；</text>
+  <text x="504" y="444" class="small">記憶和 SOUL.md 在固定包裡，照樣帶著。</text>
+</svg>

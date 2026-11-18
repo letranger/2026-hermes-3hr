@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+  </defs>
+  <style>
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fdf3d8}.agent{fill:#e2f5e9}.pc{fill:#f4f4f4}
+    .group{fill:#f6fbf8;stroke:#2a7;stroke-width:1.4;stroke-dasharray:6 4;rx:10}
+    .trait{fill:#fff;stroke:#2a7;stroke-width:1.2;rx:8}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .line2{stroke:#555;stroke-width:1.8;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+    .bubble{fill:#fff;stroke:#bbb;stroke-dasharray:4 3;rx:6}
+  </style>
+  <text x="24" y="34" class="title">先想像一下：自己操作電腦，和把事情交給助理</text>
+
+  <!-- ① 自己來 -->
+  <text x="24" y="70" class="lbl">① 自己來</text>
+  <rect x="40" y="86" width="110" height="60" class="box user"/><text x="95" y="122" text-anchor="middle" class="lbl">你</text>
+  <line x1="158" y1="116" x2="462" y2="116" class="line2"/>
+  <text x="310" y="104" text-anchor="middle" class="cap">你一個一個點：開檔、複製、貼上、寄信</text>
+  <rect x="470" y="86" width="200" height="60" class="box pc"/>
+  <text x="570" y="112" text-anchor="middle" class="lbl">電腦</text>
+  <text x="570" y="132" text-anchor="middle" class="small">檔案、信箱、網頁、行事曆</text>
+  <text x="700" y="110" class="cap">每一步都要你親自動手，</text>
+  <text x="700" y="132" class="cap">怎麼做也要你自己會。</text>
+
+  <line x1="24" y1="172" x2="936" y2="172" stroke="#ddd" stroke-width="1"/>
+
+  <!-- ② 交給助理 -->
+  <text x="24" y="206" class="lbl">② 交給助理</text>
+  <rect x="40" y="222" width="110" height="60" class="box user"/><text x="95" y="258" text-anchor="middle" class="lbl">你</text>
+  <line x1="158" y1="252" x2="252" y2="252" class="line2"/>
+  <text x="205" y="240" text-anchor="middle" class="cap">一句話交代</text>
+  <rect x="260" y="222" width="170" height="60" class="box agent"/>
+  <text x="345" y="258" text-anchor="middle" class="lbl">助理</text>
+  <line x1="438" y1="252" x2="512" y2="252" class="line2"/>
+  <text x="475" y="240" text-anchor="middle" class="cap">自己動手</text>
+  <rect x="520" y="222" width="150" height="60" class="box pc"/>
+  <text x="595" y="248" text-anchor="middle" class="lbl">電腦</text>
+  <text x="595" y="268" text-anchor="middle" class="small">同一台電腦</text>
+  <text x="700" y="234" class="cap">你只負責交代和確認，動手的是助理。</text>
+  <text x="700" y="256" class="cap">做完回報；寄信、刪檔先問你。</text>
+  <text x="700" y="278" class="cap">時間到了，它也會自己做。</text>
+
+  <!-- 助理身上帶著的三樣 -->
+  <line x1="345" y1="282" x2="345" y2="300" stroke="#2a7" stroke-width="1.6"/>
+  <rect x="40" y="300" width="630" height="132" class="group"/>
+  <text x="56" y="322" class="cap" font-weight="700" fill="#1f7a4d">助理身上帶著的三樣</text>
+  <rect x="56" y="334" width="190" height="84" class="trait"/>
+  <text x="151" y="358" text-anchor="middle" class="lbl">記憶</text>
+  <text x="151" y="382" text-anchor="middle" class="small">記得你是誰：教什麼、</text>
+  <text x="151" y="402" text-anchor="middle" class="small">做講義有什麼習慣</text>
+  <rect x="260" y="334" width="190" height="84" class="trait"/>
+  <text x="355" y="358" text-anchor="middle" class="lbl">靈魂</text>
+  <text x="355" y="382" text-anchor="middle" class="small">它是誰：角色、</text>
+  <text x="355" y="402" text-anchor="middle" class="small">說話口氣、做事原則</text>
+  <rect x="464" y="334" width="190" height="84" class="trait"/>
+  <text x="559" y="358" text-anchor="middle" class="lbl">技能</text>
+  <text x="559" y="382" text-anchor="middle" class="small">編計畫、做預算、寫公文、</text>
+  <text x="559" y="402" text-anchor="middle" class="small">整理會議紀錄……可以再教</text>
+  <text x="700" y="360" class="cap">換一件事、開新對話，</text>
+  <text x="700" y="382" class="cap">這三樣都還帶著。</text>
+  <text x="700" y="404" class="cap">會的越多，你交代得越短。</text>
+
+  <rect x="40" y="446" width="630" height="34" class="bubble"/>
+  <text x="56" y="468" class="cap">例：「把這週的重要信件整理成一張表，寄到我的信箱。」</text>
+
+  <!-- 結論 -->
+  <rect x="24" y="492" width="912" height="40" class="note"/>
+  <text x="480" y="517" text-anchor="middle" class="cap">今天的 Hermes 就是第二種：記憶和靈魂（SOUL.md）在第 4 單元，技能（skill）在第 5 單元。下一張圖先拆開看它怎麼動手。</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500" font-family="PingFang TC, Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="15">
+  <style>
+    .panel{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .box{fill:#fff;stroke:#444;stroke-width:1.6;rx:8}
+    .user{fill:#fff3d6;stroke:#c9a24a;stroke-width:1.6;rx:8}
+    .agent{fill:#e6ecfb;stroke:#4a6fc9;stroke-width:1.6;rx:8}
+    .mail{fill:#e2f5e9;stroke:#2a7;stroke-width:1.6;rx:8}
+    .lbl{font-weight:700;font-size:16px}.cap{fill:#444;font-size:13px}.small{fill:#666;font-size:12px}
+    .title{font-weight:700;font-size:18px;fill:#222}
+    .arrow{stroke:#444;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .note{fill:#fff8e6;stroke:#e0c27a;rx:6}
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#444"/></marker></defs>
+  <text x="24" y="34" class="title">兩種接 Email 的方式：信箱是「工作對象」，還是「傳話管道」</text>
+
+  <!-- 左：himalaya -->
+  <rect x="24" y="56" width="444" height="300" class="panel"/>
+  <text x="246" y="86" text-anchor="middle" class="lbl">① himalaya（第 6 單元）</text>
+  <text x="246" y="106" text-anchor="middle" class="small">信箱是 Hermes 要處理的「工作對象」</text>
+  <rect x="44" y="134" width="110" height="56" class="user"/>
+  <text x="99" y="160" text-anchor="middle" class="lbl">你</text>
+  <text x="99" y="178" text-anchor="middle" class="small">在 Hermes 打字</text>
+  <rect x="190" y="134" width="110" height="56" class="agent"/>
+  <text x="245" y="160" text-anchor="middle" class="lbl">Hermes</text>
+  <text x="245" y="178" text-anchor="middle" class="small">用 himalaya 工具</text>
+  <rect x="336" y="134" width="114" height="56" class="mail"/>
+  <text x="393" y="160" text-anchor="middle" class="lbl">你的信箱</text>
+  <text x="393" y="178" text-anchor="middle" class="small">平常用的那個</text>
+  <path d="M154,162 H186" class="arrow"/>
+  <path d="M300,162 H332" class="arrow"/>
+  <text x="44" y="228" class="cap">你下指令，它才去讀信、整理、寄信</text>
+  <text x="44" y="252" class="cap">它不會自己去看信箱（排程除外）</text>
+  <text x="44" y="276" class="cap">不會動到其他信的已讀／未讀</text>
+  <text x="44" y="308" class="cap" font-weight="700">適合：整理重要信件、草擬回信</text>
+  <text x="44" y="332" class="small">設定：himalaya 自己的設定檔</text>
+
+  <!-- 右：Gateway Email -->
+  <rect x="492" y="56" width="444" height="300" class="panel"/>
+  <text x="714" y="86" text-anchor="middle" class="lbl">② Gateway 的 Email（和 Telegram 同類）</text>
+  <text x="714" y="106" text-anchor="middle" class="small">信箱是你和 Hermes 之間的「傳話管道」</text>
+  <rect x="512" y="134" width="110" height="56" class="user"/>
+  <text x="567" y="160" text-anchor="middle" class="lbl">你</text>
+  <text x="567" y="178" text-anchor="middle" class="small">在手機寄一封信</text>
+  <rect x="658" y="134" width="122" height="56" class="mail"/>
+  <text x="719" y="160" text-anchor="middle" class="lbl">專用信箱</text>
+  <text x="719" y="178" text-anchor="middle" class="small">另外開給 Hermes</text>
+  <rect x="816" y="134" width="104" height="56" class="agent"/>
+  <text x="868" y="160" text-anchor="middle" class="lbl">Hermes</text>
+  <text x="868" y="178" text-anchor="middle" class="small">每 15 秒查一次</text>
+  <path d="M622,154 H654" class="arrow"/>
+  <path d="M780,154 H812" class="arrow"/>
+  <path d="M812,172 H784" class="arrow"/>
+  <path d="M654,172 H626" class="arrow"/>
+  <text x="512" y="228" class="cap">你寄信給它，它照信裡的話做，再回信給你</text>
+  <text x="512" y="252" class="cap">只理名單裡的寄件人，其他的不回</text>
+  <text x="512" y="276" class="cap">收件匣裡的未讀信，它全都會標成已讀</text>
+  <text x="512" y="308" class="cap" font-weight="700">適合：不想裝 Telegram，人在外面要交辦事</text>
+  <text x="512" y="332" class="small">設定：Hermes 的 .env（EMAIL_ 開頭）</text>
+
+  <!-- 結論 -->
+  <rect x="24" y="372" width="912" height="112" class="note"/>
+  <text x="40" y="398" class="cap" font-weight="700">怎麼分</text>
+  <text x="40" y="422" class="cap">要 Hermes「處理我的信」→ ①。要「用信跟 Hermes 說話」→ ②。兩個可以同時用，設定各填各的，Gmail 應用程式密碼可以各用一組。</text>
+  <text x="40" y="446" class="cap">② 一定要接一個專用信箱：它會把收件匣的未讀信全標成已讀，接在主信箱上，你就分不出哪些信還沒看。</text>
+  <text x="40" y="470" class="cap">用 ② 也可以叫 Hermes 處理你的主信箱：它收到你的信之後，再用 ① 的 himalaya 去讀、去寄。</text>
+</svg>
